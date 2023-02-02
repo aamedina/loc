@@ -1,14 +1,14 @@
 (ns net.wikipunk.rdf.loc.preservation
   "An umbrella scheme to collocate all the preservation vocabularies."
   {:madsrdf/adminMetadata
-   [{:loc.record/recordChangeDate #inst "2012-08-01T04:00:01.000-00:00",
-     :loc.record/recordContentSource :loc.preservation/dlc,
-     :loc.record/recordStatus "new",
-     :rdf/type :loc.record/RecordInfo}
-    {:loc.record/recordChangeDate #inst "2018-09-24T04:00:01.000-00:00",
-     :loc.record/recordContentSource :loc.preservation/dlc,
-     :loc.record/recordStatus "modified",
-     :rdf/type :loc.record/RecordInfo}],
+   [{:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2018-09-24T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation/dlc,
+     :ri/recordStatus "modified"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2012-08-01T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation/dlc,
+     :ri/recordStatus "new"}],
    :madsrdf/hasTopMemberOfMADSScheme
    [:loc.preservation/signatureEncoding
     :loc.preservation/environmentCharacteristic
@@ -51,16 +51,16 @@
    :rdfs/label {:rdf/language "en",
                 :rdf/value    "Preservation Schemes (all)"},
    :skos/changeNote
-   [{:changeset/changeReason "new",
-     :changeset/createdDate #inst "2012-08-01T04:00:01.000-00:00",
-     :changeset/creatorName :loc.preservation/dlc,
-     :changeset/subjectOfChange "http://id.loc.gov/vocabulary/preservation",
-     :rdf/type :changeset/ChangeSet}
-    {:changeset/changeReason "modified",
-     :changeset/createdDate #inst "2018-09-24T04:00:01.000-00:00",
-     :changeset/creatorName :loc.preservation/dlc,
-     :changeset/subjectOfChange "http://id.loc.gov/vocabulary/preservation",
-     :rdf/type :changeset/ChangeSet}],
+   [{:cs/changeReason    "new",
+     :cs/createdDate     #inst "2012-08-01T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation/dlc,
+     :cs/subjectOfChange "http://id.loc.gov/vocabulary/preservation",
+     :rdf/type           :cs/ChangeSet}
+    {:cs/changeReason    "modified",
+     :cs/createdDate     #inst "2018-09-24T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation/dlc,
+     :cs/subjectOfChange "http://id.loc.gov/vocabulary/preservation",
+     :rdf/type           :cs/ChangeSet}],
    :skos/hasTopConcept ["Linking Environment Role"
                         "Linking Agent Role (Event) (DEPRECATED)"
                         "Signature Method"

@@ -12,9 +12,9 @@
    [net.wikipunk.rdf.bflc]
    [net.wikipunk.rdf.madsrdf]
    [net.wikipunk.rdf.premis]
-   [net.wikipunk.rdf.loc.record]
-   [net.wikipunk.rdf.loc.identifiers]
-   [net.wikipunk.rdf.loc.preservation]))
+   #_[net.wikipunk.rdf.loc.record]
+   #_[net.wikipunk.rdf.loc.identifiers]
+   #_[net.wikipunk.rdf.loc.preservation]))
 
 (defrecord LOC [vocab boot]
   com/Lifecycle
