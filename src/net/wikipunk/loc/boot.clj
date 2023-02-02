@@ -291,3 +291,14 @@
    :rdf/type         :rdfa/PrefixMapping,
    :rdfa/prefix      "loc.nameTitleSchemes",
    :rdfa/uri         "http://id.loc.gov/vocabulary/nameTitleSchemes/"})
+
+(def datatypes
+  {:rdf/type         :rdfa/PrefixMapping,
+   :rdfa/prefix      "loc.datatypes",
+   :rdfa/uri         "http://id.loc.gov/datatypes/"})
+
+(def edtf
+  {:dcat/downloadURL "https://id.loc.gov/datatypes/edtf.rdf"
+   :rdf/type         :rdfa/PrefixMapping,
+   :rdfa/prefix      "loc.edtf",
+   :rdfa/uri         "http://id.loc.gov/datatypes/edtf/"})
