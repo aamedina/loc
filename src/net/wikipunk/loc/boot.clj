@@ -16,6 +16,11 @@
    :rdfa/uri    "http://id.loc.gov/vocabulary/preservation/"
    :rdfa/prefix "loc.preservation"})
 
+(def lcc
+  {:rdf/type    :rdfa/PrefixMapping
+   :rdfa/uri    "http://id.loc.gov/ontologies/lcc#"
+   :rdfa/prefix "lcc"})
+
 (def actionsGranted
   {:dcat/downloadURL
    "http://id.loc.gov/vocabulary/preservation/actionsGranted.rdf",

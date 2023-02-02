@@ -22,6 +22,7 @@
                         net.wikipunk.loc.boot/identifiers
                         net.wikipunk.loc.boot/inhibitorTarget
                         net.wikipunk.loc.boot/inhibitorType
+                        net.wikipunk.loc.boot/lcc
                         net.wikipunk.loc.boot/linkingAgentRoleEvent
                         net.wikipunk.loc.boot/linkingEnvironmentRole
                         net.wikipunk.loc.boot/objectCategory
