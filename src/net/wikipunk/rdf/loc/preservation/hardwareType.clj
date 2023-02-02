@@ -23,28 +23,178 @@
    :rdfa/uri "http://id.loc.gov/vocabulary/preservation/hardwareType/"})
 
 (def inp
-  "input/output device"
+  "A hardware device that accepts inputted information and also has the capability of outputting that information."
   {:db/ident :loc.preservation.hardwareType/inp,
+   :madsrdf/adminMetadata
+   [{:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2018-09-24T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.hardwareType/inp,
+     :ri/recordStatus "deprecated"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2012-08-01T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.hardwareType/dlc,
+     :ri/recordStatus "new"}],
    :madsrdf/authoritativeLabel "input/output device",
-   :rdf/type :madsrdf/Authority})
+   :madsrdf/code "inp",
+   :madsrdf/definitionNote
+   {:rdf/language "en",
+    :rdf/value
+    "A hardware device that accepts inputted information and also has the capability of outputting that information."},
+   :madsrdf/isMemberOfMADSCollection
+   :loc.preservation.hardwareType/collection_PREMIS,
+   :madsrdf/isMemberOfMADSScheme [:loc.preservation/hardwareType
+                                  :loc.vocabulary/preservation],
+   :madsrdf/useInstead :loc.preservation.environmentFunctionType/inp,
+   :rdf/type :madsrdf/Authority,
+   :rdfs/seeAlso
+   ["http://id.loc.gov/vocabulary/preservation/environmentFunctionType/inp"],
+   :skos/changeNote [{:cs/changeReason    "deprecated",
+                      :cs/createdDate     #inst "2018-09-24T04:00:01.000-00:00",
+                      :cs/creatorName     :loc.preservation.hardwareType/inp,
+                      :cs/subjectOfChange :loc.preservation.hardwareType/inp,
+                      :rdf/type           :cs/ChangeSet}
+                     {:cs/changeReason    "new",
+                      :cs/createdDate     #inst "2012-08-01T04:00:01.000-00:00",
+                      :cs/creatorName     :loc.preservation.hardwareType/dlc,
+                      :cs/subjectOfChange :loc.preservation.hardwareType/inp,
+                      :rdf/type           :cs/ChangeSet}],
+   :skos/definition
+   {:rdf/language "en",
+    :rdf/value
+    "A hardware device that accepts inputted information and also has the capability of outputting that information."},
+   :skos/inScheme [:loc.preservation/hardwareType :loc.vocabulary/preservation],
+   :skos/notation "inp",
+   :skos/prefLabel "input/output device"})
 
 (def mem
-  "memory"
+  "Components and recording media that retain digital data used for computing for some interval of time."
   {:db/ident :loc.preservation.hardwareType/mem,
+   :madsrdf/adminMetadata
+   [{:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2012-08-01T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.hardwareType/dlc,
+     :ri/recordStatus "new"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2018-09-24T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.hardwareType/mem,
+     :ri/recordStatus "deprecated"}],
    :madsrdf/authoritativeLabel "memory",
-   :rdf/type :madsrdf/Authority})
+   :madsrdf/code "mem",
+   :madsrdf/definitionNote
+   {:rdf/language "en",
+    :rdf/value
+    "Components and recording media that retain digital data used for computing for some interval of time."},
+   :madsrdf/isMemberOfMADSCollection
+   :loc.preservation.hardwareType/collection_PREMIS,
+   :madsrdf/isMemberOfMADSScheme [:loc.vocabulary/preservation
+                                  :loc.preservation/hardwareType],
+   :madsrdf/useInstead :loc.preservation.environmentFunctionType/mem,
+   :rdf/type :madsrdf/Authority,
+   :rdfs/seeAlso
+   ["http://id.loc.gov/vocabulary/preservation/environmentFunctionType/mem"],
+   :skos/changeNote [{:cs/changeReason    "new",
+                      :cs/createdDate     #inst "2012-08-01T04:00:01.000-00:00",
+                      :cs/creatorName     :loc.preservation.hardwareType/dlc,
+                      :cs/subjectOfChange :loc.preservation.hardwareType/mem,
+                      :rdf/type           :cs/ChangeSet}
+                     {:cs/changeReason    "deprecated",
+                      :cs/createdDate     #inst "2018-09-24T04:00:01.000-00:00",
+                      :cs/creatorName     :loc.preservation.hardwareType/mem,
+                      :cs/subjectOfChange :loc.preservation.hardwareType/mem,
+                      :rdf/type           :cs/ChangeSet}],
+   :skos/definition
+   {:rdf/language "en",
+    :rdf/value
+    "Components and recording media that retain digital data used for computing for some interval of time."},
+   :skos/inScheme [:loc.vocabulary/preservation :loc.preservation/hardwareType],
+   :skos/notation "mem",
+   :skos/prefLabel "memory"})
 
 (def pro
-  "processor"
+  "The portion of a computer system that carries out the instructions of a computer program, and is the primary element carrying out the computer's functions."
   {:db/ident :loc.preservation.hardwareType/pro,
+   :madsrdf/adminMetadata
+   [{:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2018-09-24T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.hardwareType/pro,
+     :ri/recordStatus "deprecated"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2012-08-01T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.hardwareType/dlc,
+     :ri/recordStatus "new"}],
    :madsrdf/authoritativeLabel "processor",
-   :rdf/type :madsrdf/Authority})
+   :madsrdf/code "pro",
+   :madsrdf/definitionNote
+   {:rdf/language "en",
+    :rdf/value
+    "The portion of a computer system that carries out the instructions of a computer program, and is the primary element carrying out the computer's functions."},
+   :madsrdf/isMemberOfMADSCollection
+   :loc.preservation.hardwareType/collection_PREMIS,
+   :madsrdf/isMemberOfMADSScheme [:loc.preservation/hardwareType
+                                  :loc.vocabulary/preservation],
+   :madsrdf/useInstead :loc.preservation.environmentFunctionType/pro,
+   :rdf/type :madsrdf/Authority,
+   :rdfs/seeAlso
+   ["http://id.loc.gov/vocabulary/preservation/environmentFunctionType/pro"],
+   :skos/changeNote [{:cs/changeReason    "new",
+                      :cs/createdDate     #inst "2012-08-01T04:00:01.000-00:00",
+                      :cs/creatorName     :loc.preservation.hardwareType/dlc,
+                      :cs/subjectOfChange :loc.preservation.hardwareType/pro,
+                      :rdf/type           :cs/ChangeSet}
+                     {:cs/changeReason    "deprecated",
+                      :cs/createdDate     #inst "2018-09-24T04:00:01.000-00:00",
+                      :cs/creatorName     :loc.preservation.hardwareType/pro,
+                      :cs/subjectOfChange :loc.preservation.hardwareType/pro,
+                      :rdf/type           :cs/ChangeSet}],
+   :skos/definition
+   {:rdf/language "en",
+    :rdf/value
+    "The portion of a computer system that carries out the instructions of a computer program, and is the primary element carrying out the computer's functions."},
+   :skos/inScheme [:loc.preservation/hardwareType :loc.vocabulary/preservation],
+   :skos/notation "pro",
+   :skos/prefLabel "processor"})
 
 (def sto
-  "storage device"
+  "A device for storing information (data) on a computer."
   {:db/ident :loc.preservation.hardwareType/sto,
+   :madsrdf/adminMetadata
+   [{:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2012-08-01T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.hardwareType/dlc,
+     :ri/recordStatus "new"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2018-09-24T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.hardwareType/sto,
+     :ri/recordStatus "deprecated"}],
    :madsrdf/authoritativeLabel "storage device",
-   :rdf/type :madsrdf/Authority})
+   :madsrdf/code "sto",
+   :madsrdf/definitionNote
+   {:rdf/language "en",
+    :rdf/value    "A device for storing information (data) on a computer."},
+   :madsrdf/isMemberOfMADSCollection
+   :loc.preservation.hardwareType/collection_PREMIS,
+   :madsrdf/isMemberOfMADSScheme [:loc.preservation/hardwareType
+                                  :loc.vocabulary/preservation],
+   :madsrdf/useInstead :loc.preservation.environmentFunctionType/sto,
+   :rdf/type :madsrdf/Authority,
+   :rdfs/seeAlso
+   ["http://id.loc.gov/vocabulary/preservation/environmentFunctionType/sto"],
+   :skos/changeNote [{:cs/changeReason    "new",
+                      :cs/createdDate     #inst "2012-08-01T04:00:01.000-00:00",
+                      :cs/creatorName     :loc.preservation.hardwareType/dlc,
+                      :cs/subjectOfChange :loc.preservation.hardwareType/sto,
+                      :rdf/type           :cs/ChangeSet}
+                     {:cs/changeReason    "deprecated",
+                      :cs/createdDate     #inst "2018-09-24T04:00:01.000-00:00",
+                      :cs/creatorName     :loc.preservation.hardwareType/sto,
+                      :cs/subjectOfChange :loc.preservation.hardwareType/sto,
+                      :rdf/type           :cs/ChangeSet}],
+   :skos/definition {:rdf/language "en",
+                     :rdf/value
+                     "A device for storing information (data) on a computer."},
+   :skos/inScheme [:loc.vocabulary/preservation :loc.preservation/hardwareType],
+   :skos/notation "sto",
+   :skos/prefLabel "storage device"})
 
 (def ^{:private true} hardwareType
   ""

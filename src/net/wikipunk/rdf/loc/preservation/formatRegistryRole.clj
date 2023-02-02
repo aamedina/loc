@@ -24,29 +24,105 @@
   (:refer-clojure :exclude [val]))
 
 (def spe
-  "specification"
+  "An explicit set of requirements to be satisfied by a file format, i.e. a package of information that can be stored as a data file."
   {:db/ident :loc.preservation.formatRegistryRole/spe,
+   :madsrdf/adminMetadata
+   [{:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2012-08-01T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.formatRegistryRole/dlc,
+     :ri/recordStatus "new"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2018-09-24T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.formatRegistryRole/dlc,
+     :ri/recordStatus "modified"}],
    :madsrdf/authoritativeLabel "specification",
-   :rdf/type :madsrdf/Authority})
+   :madsrdf/code "spe",
+   :madsrdf/definitionNote
+   {:rdf/language "en",
+    :rdf/value
+    "An explicit set of requirements to be satisfied by a file format, i.e. a package of information that can be stored as a data file."},
+   :madsrdf/isMemberOfMADSCollection
+   :loc.preservation.formatRegistryRole/collection_PREMIS,
+   :madsrdf/isMemberOfMADSScheme [:loc.preservation/formatRegistryRole
+                                  :loc.vocabulary/preservation],
+   :rdf/type :madsrdf/Authority,
+   :rdfs/subPropertyOf :skos/closeMatch,
+   :skos/changeNote
+   [{:cs/changeReason    "new",
+     :cs/createdDate     #inst "2012-08-01T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.formatRegistryRole/dlc,
+     :cs/subjectOfChange :loc.preservation.formatRegistryRole/spe,
+     :rdf/type           :cs/ChangeSet}
+    {:cs/changeReason    "modified",
+     :cs/createdDate     #inst "2018-09-24T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.formatRegistryRole/dlc,
+     :cs/subjectOfChange :loc.preservation.formatRegistryRole/spe,
+     :rdf/type           :cs/ChangeSet}],
+   :skos/definition
+   {:rdf/language "en",
+    :rdf/value
+    "An explicit set of requirements to be satisfied by a file format, i.e. a package of information that can be stored as a data file."},
+   :skos/inScheme [:loc.preservation/formatRegistryRole
+                   :loc.vocabulary/preservation],
+   :skos/notation "spe",
+   :skos/prefLabel "specification"})
 
 (def val
-  "validation profile"
+  "The ability to measure conformance against a specific profile."
   {:db/ident :loc.preservation.formatRegistryRole/val,
+   :madsrdf/adminMetadata
+   [{:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2012-08-01T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.formatRegistryRole/dlc,
+     :ri/recordStatus "new"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2018-09-24T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.formatRegistryRole/dlc,
+     :ri/recordStatus "modified"}],
    :madsrdf/authoritativeLabel "validation profile",
-   :rdf/type :madsrdf/Authority})
+   :madsrdf/code "val",
+   :madsrdf/definitionNote
+   {:rdf/language "en",
+    :rdf/value
+    "The ability to measure conformance against a specific profile."},
+   :madsrdf/isMemberOfMADSCollection
+   :loc.preservation.formatRegistryRole/collection_PREMIS,
+   :madsrdf/isMemberOfMADSScheme [:loc.preservation/formatRegistryRole
+                                  :loc.vocabulary/preservation],
+   :rdf/type :madsrdf/Authority,
+   :rdfs/subPropertyOf :skos/closeMatch,
+   :skos/changeNote
+   [{:cs/changeReason    "new",
+     :cs/createdDate     #inst "2012-08-01T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.formatRegistryRole/dlc,
+     :cs/subjectOfChange :loc.preservation.formatRegistryRole/val,
+     :rdf/type           :cs/ChangeSet}
+    {:cs/changeReason    "modified",
+     :cs/createdDate     #inst "2018-09-24T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.formatRegistryRole/dlc,
+     :cs/subjectOfChange :loc.preservation.formatRegistryRole/val,
+     :rdf/type           :cs/ChangeSet}],
+   :skos/definition
+   {:rdf/language "en",
+    :rdf/value
+    "The ability to measure conformance against a specific profile."},
+   :skos/inScheme [:loc.preservation/formatRegistryRole
+                   :loc.vocabulary/preservation],
+   :skos/notation "val",
+   :skos/prefLabel "validation profile"})
 
 (def ^{:private true} formatRegistryRole
   "The purpose or expected use of the registry."
   {:db/ident        :loc.preservation/formatRegistryRole,
    :madsrdf/adminMetadata
    [{:rdf/type :ri/RecordInfo,
-     :ri/recordChangeDate #inst "2012-08-01T04:00:01.000-00:00",
-     :ri/recordContentSource :loc.preservation/dlc,
-     :ri/recordStatus "new"}
-    {:rdf/type :ri/RecordInfo,
      :ri/recordChangeDate #inst "2018-09-24T04:00:01.000-00:00",
      :ri/recordContentSource :loc.preservation/dlc,
-     :ri/recordStatus "modified"}],
+     :ri/recordStatus "modified"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2012-08-01T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation/dlc,
+     :ri/recordStatus "new"}],
    :madsrdf/hasMADSSchemeMember [:loc.preservation.formatRegistryRole/val
                                  :loc.preservation.formatRegistryRole/spe],
    :madsrdf/hasRelatedAuthority :loc.preservation/environmentRegistryRole,

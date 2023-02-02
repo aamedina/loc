@@ -24,16 +24,96 @@
    "http://id.loc.gov/vocabulary/preservation/eventRelatedObjectRole/"})
 
 (def out
-  "outcome"
+  "The object in relation to the described event is the outcome of that event."
   {:db/ident :loc.preservation.eventRelatedObjectRole/out,
+   :madsrdf/adminMetadata
+   [{:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2018-09-24T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.eventRelatedObjectRole/dlc,
+     :ri/recordStatus "modified"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2012-08-01T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.eventRelatedObjectRole/dlc,
+     :ri/recordStatus "new"}],
    :madsrdf/authoritativeLabel "outcome",
-   :rdf/type :madsrdf/Authority})
+   :madsrdf/code "out",
+   :madsrdf/definitionNote
+   {:rdf/language "en",
+    :rdf/value
+    "The object in relation to the described event is the outcome of that event."},
+   :madsrdf/isMemberOfMADSCollection
+   :loc.preservation.eventRelatedObjectRole/collection_PREMIS,
+   :madsrdf/isMemberOfMADSScheme [:loc.preservation/eventRelatedObjectRole
+                                  :loc.vocabulary/preservation],
+   :rdf/type :madsrdf/Authority,
+   :rdfs/domain :premis/Event,
+   :rdfs/range :premis/Object,
+   :rdfs/subPropertyOf :prov/generated,
+   :skos/changeNote
+   [{:cs/changeReason    "new",
+     :cs/createdDate     #inst "2012-08-01T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.eventRelatedObjectRole/dlc,
+     :cs/subjectOfChange :loc.preservation.eventRelatedObjectRole/out,
+     :rdf/type           :cs/ChangeSet}
+    {:cs/changeReason    "modified",
+     :cs/createdDate     #inst "2018-09-24T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.eventRelatedObjectRole/dlc,
+     :cs/subjectOfChange :loc.preservation.eventRelatedObjectRole/out,
+     :rdf/type           :cs/ChangeSet}],
+   :skos/definition
+   {:rdf/language "en",
+    :rdf/value
+    "The object in relation to the described event is the outcome of that event."},
+   :skos/inScheme [:loc.vocabulary/preservation
+                   :loc.preservation/eventRelatedObjectRole],
+   :skos/notation "out",
+   :skos/prefLabel "outcome"})
 
 (def sou
-  "source"
+  "The object in relation to the described event that existed prior to that event and was used by it."
   {:db/ident :loc.preservation.eventRelatedObjectRole/sou,
+   :madsrdf/adminMetadata
+   [{:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2018-09-24T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.eventRelatedObjectRole/dlc,
+     :ri/recordStatus "modified"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2012-08-01T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.eventRelatedObjectRole/dlc,
+     :ri/recordStatus "new"}],
    :madsrdf/authoritativeLabel "source",
-   :rdf/type :madsrdf/Authority})
+   :madsrdf/code "sou",
+   :madsrdf/definitionNote
+   {:rdf/language "en",
+    :rdf/value
+    "The object in relation to the described event that existed prior to that event and was used by it."},
+   :madsrdf/isMemberOfMADSCollection
+   :loc.preservation.eventRelatedObjectRole/collection_PREMIS,
+   :madsrdf/isMemberOfMADSScheme [:loc.preservation/eventRelatedObjectRole
+                                  :loc.vocabulary/preservation],
+   :rdf/type :madsrdf/Authority,
+   :rdfs/domain :premis/Event,
+   :rdfs/range :premis/Object,
+   :rdfs/subPropertyOf :prov/used,
+   :skos/changeNote
+   [{:cs/changeReason    "modified",
+     :cs/createdDate     #inst "2018-09-24T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.eventRelatedObjectRole/dlc,
+     :cs/subjectOfChange :loc.preservation.eventRelatedObjectRole/sou,
+     :rdf/type           :cs/ChangeSet}
+    {:cs/changeReason    "new",
+     :cs/createdDate     #inst "2012-08-01T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.eventRelatedObjectRole/dlc,
+     :cs/subjectOfChange :loc.preservation.eventRelatedObjectRole/sou,
+     :rdf/type           :cs/ChangeSet}],
+   :skos/definition
+   {:rdf/language "en",
+    :rdf/value
+    "The object in relation to the described event that existed prior to that event and was used by it."},
+   :skos/inScheme [:loc.preservation/eventRelatedObjectRole
+                   :loc.vocabulary/preservation],
+   :skos/notation "sou",
+   :skos/prefLabel "source"})
 
 (def ^{:private true} eventRelatedObjectRole
   "The role of the object associated with an event."

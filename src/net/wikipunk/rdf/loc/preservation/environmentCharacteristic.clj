@@ -25,41 +25,184 @@
   (:refer-clojure :exclude [min]))
 
 (def kno
-  "known to work"
+  "The object can be rendered in this environment (i.e.the object is supported by the described environment but the repository doesn't know if it is minimum or recommended)."
   {:db/ident :loc.preservation.environmentCharacteristic/kno,
+   :madsrdf/adminMetadata
+   [{:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2018-09-24T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.environmentCharacteristic/dlc,
+     :ri/recordStatus "modified"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2012-08-01T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.environmentCharacteristic/dlc,
+     :ri/recordStatus "new"}],
    :madsrdf/authoritativeLabel "known to work",
-   :rdf/type :madsrdf/Authority})
+   :madsrdf/code "kno",
+   :madsrdf/definitionNote
+   {:rdf/language "en",
+    :rdf/value
+    "The object can be rendered in this environment (i.e.the object is supported by the described environment but the repository doesn't know if it is minimum or recommended)."},
+   :madsrdf/isMemberOfMADSCollection
+   :loc.preservation.environmentCharacteristic/collection_PREMIS,
+   :madsrdf/isMemberOfMADSScheme [:loc.preservation/environmentCharacteristic
+                                  :loc.vocabulary/preservation],
+   :rdf/type :madsrdf/Authority,
+   :skos/changeNote
+   [{:cs/changeReason    "new",
+     :cs/createdDate     #inst "2012-08-01T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.environmentCharacteristic/dlc,
+     :cs/subjectOfChange :loc.preservation.environmentCharacteristic/kno,
+     :rdf/type           :cs/ChangeSet}
+    {:cs/changeReason    "modified",
+     :cs/createdDate     #inst "2018-09-24T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.environmentCharacteristic/dlc,
+     :cs/subjectOfChange :loc.preservation.environmentCharacteristic/kno,
+     :rdf/type           :cs/ChangeSet}],
+   :skos/definition
+   {:rdf/language "en",
+    :rdf/value
+    "The object can be rendered in this environment (i.e.the object is supported by the described environment but the repository doesn't know if it is minimum or recommended)."},
+   :skos/inScheme [:loc.vocabulary/preservation
+                   :loc.preservation/environmentCharacteristic],
+   :skos/notation "kno",
+   :skos/prefLabel "known to work"})
 
 (def min
-  "minimum"
+  "The least demanding (in terms of components or resources needed) environment known to work by the repository."
   {:db/ident :loc.preservation.environmentCharacteristic/min,
+   :madsrdf/adminMetadata
+   [{:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2018-09-24T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.environmentCharacteristic/dlc,
+     :ri/recordStatus "modified"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2012-08-01T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.environmentCharacteristic/dlc,
+     :ri/recordStatus "new"}],
    :madsrdf/authoritativeLabel "minimum",
-   :rdf/type :madsrdf/Authority})
+   :madsrdf/code "min",
+   :madsrdf/definitionNote
+   {:rdf/language "en",
+    :rdf/value
+    "The least demanding (in terms of components or resources needed) environment known to work by the repository."},
+   :madsrdf/isMemberOfMADSCollection
+   :loc.preservation.environmentCharacteristic/collection_PREMIS,
+   :madsrdf/isMemberOfMADSScheme [:loc.preservation/environmentCharacteristic
+                                  :loc.vocabulary/preservation],
+   :rdf/type :madsrdf/Authority,
+   :skos/changeNote
+   [{:cs/changeReason    "modified",
+     :cs/createdDate     #inst "2018-09-24T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.environmentCharacteristic/dlc,
+     :cs/subjectOfChange :loc.preservation.environmentCharacteristic/min,
+     :rdf/type           :cs/ChangeSet}
+    {:cs/changeReason    "new",
+     :cs/createdDate     #inst "2012-08-01T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.environmentCharacteristic/dlc,
+     :cs/subjectOfChange :loc.preservation.environmentCharacteristic/min,
+     :rdf/type           :cs/ChangeSet}],
+   :skos/definition
+   {:rdf/language "en",
+    :rdf/value
+    "The least demanding (in terms of components or resources needed) environment known to work by the repository."},
+   :skos/inScheme [:loc.vocabulary/preservation
+                   :loc.preservation/environmentCharacteristic],
+   :skos/notation "min",
+   :skos/prefLabel "minimum"})
 
 (def rec
-  "recommended"
+  "An environment preferred for optional rendering."
   {:db/ident :loc.preservation.environmentCharacteristic/rec,
+   :madsrdf/adminMetadata
+   [{:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2018-09-24T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.environmentCharacteristic/dlc,
+     :ri/recordStatus "modified"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2012-08-01T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.environmentCharacteristic/dlc,
+     :ri/recordStatus "new"}],
    :madsrdf/authoritativeLabel "recommended",
-   :rdf/type :madsrdf/Authority})
+   :madsrdf/code "rec",
+   :madsrdf/definitionNote {:rdf/language "en",
+                            :rdf/value
+                            "An environment preferred for optional rendering."},
+   :madsrdf/isMemberOfMADSCollection
+   :loc.preservation.environmentCharacteristic/collection_PREMIS,
+   :madsrdf/isMemberOfMADSScheme [:loc.preservation/environmentCharacteristic
+                                  :loc.vocabulary/preservation],
+   :rdf/type :madsrdf/Authority,
+   :skos/changeNote
+   [{:cs/changeReason    "new",
+     :cs/createdDate     #inst "2012-08-01T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.environmentCharacteristic/dlc,
+     :cs/subjectOfChange :loc.preservation.environmentCharacteristic/rec,
+     :rdf/type           :cs/ChangeSet}
+    {:cs/changeReason    "modified",
+     :cs/createdDate     #inst "2018-09-24T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.environmentCharacteristic/dlc,
+     :cs/subjectOfChange :loc.preservation.environmentCharacteristic/rec,
+     :rdf/type           :cs/ChangeSet}],
+   :skos/definition {:rdf/language "en",
+                     :rdf/value
+                     "An environment preferred for optional rendering."},
+   :skos/inScheme [:loc.preservation/environmentCharacteristic
+                   :loc.vocabulary/preservation],
+   :skos/notation "rec",
+   :skos/prefLabel "recommended"})
 
 (def uns
-  "unspecified"
+  "No attempt was made to provide this value."
   {:db/ident :loc.preservation.environmentCharacteristic/uns,
+   :madsrdf/adminMetadata
+   [{:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2018-09-24T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.environmentCharacteristic/dlc,
+     :ri/recordStatus "modified"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2012-08-01T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.environmentCharacteristic/dlc,
+     :ri/recordStatus "new"}],
    :madsrdf/authoritativeLabel "unspecified",
-   :rdf/type :madsrdf/Authority})
+   :madsrdf/code "uns",
+   :madsrdf/definitionNote {:rdf/language "en",
+                            :rdf/value
+                            "No attempt was made to provide this value."},
+   :madsrdf/isMemberOfMADSCollection
+   :loc.preservation.environmentCharacteristic/collection_PREMIS,
+   :madsrdf/isMemberOfMADSScheme [:loc.preservation/environmentCharacteristic
+                                  :loc.vocabulary/preservation],
+   :rdf/type :madsrdf/Authority,
+   :skos/changeNote
+   [{:cs/changeReason    "modified",
+     :cs/createdDate     #inst "2018-09-24T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.environmentCharacteristic/dlc,
+     :cs/subjectOfChange :loc.preservation.environmentCharacteristic/uns,
+     :rdf/type           :cs/ChangeSet}
+    {:cs/changeReason    "new",
+     :cs/createdDate     #inst "2012-08-01T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.environmentCharacteristic/dlc,
+     :cs/subjectOfChange :loc.preservation.environmentCharacteristic/uns,
+     :rdf/type           :cs/ChangeSet}],
+   :skos/definition {:rdf/language "en",
+                     :rdf/value "No attempt was made to provide this value."},
+   :skos/inScheme [:loc.preservation/environmentCharacteristic
+                   :loc.vocabulary/preservation],
+   :skos/notation "uns",
+   :skos/prefLabel "unspecified"})
 
 (def ^{:private true} environmentCharacteristic
   "Hardware/software combinations supporting use of the object."
   {:db/ident :loc.preservation/environmentCharacteristic,
    :madsrdf/adminMetadata
    [{:rdf/type :ri/RecordInfo,
-     :ri/recordChangeDate #inst "2012-08-01T04:00:01.000-00:00",
-     :ri/recordContentSource :loc.preservation/dlc,
-     :ri/recordStatus "new"}
-    {:rdf/type :ri/RecordInfo,
      :ri/recordChangeDate #inst "2018-09-24T04:00:01.000-00:00",
      :ri/recordContentSource :loc.preservation/dlc,
-     :ri/recordStatus "modified"}],
+     :ri/recordStatus "modified"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2012-08-01T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation/dlc,
+     :ri/recordStatus "new"}],
    :madsrdf/hasMADSSchemeMember
    [:loc.preservation.environmentCharacteristic/kno
     :loc.preservation.environmentCharacteristic/rec

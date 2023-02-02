@@ -23,22 +23,124 @@
    :rdfa/uri "http://id.loc.gov/vocabulary/preservation/inhibitorTarget/"})
 
 (def all
-  "All Content"
+  "Inhibitor prohibits use of all content."
   {:db/ident :loc.preservation.inhibitorTarget/all,
+   :madsrdf/adminMetadata
+   [{:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2012-08-01T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.inhibitorTarget/dlc,
+     :ri/recordStatus "new"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2018-09-24T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.inhibitorTarget/all,
+     :ri/recordStatus "deprecated"}],
    :madsrdf/authoritativeLabel "All Content",
-   :rdf/type :madsrdf/Authority})
+   :madsrdf/code "all",
+   :madsrdf/definitionNote {:rdf/language "en",
+                            :rdf/value
+                            "Inhibitor prohibits use of all content."},
+   :madsrdf/isMemberOfMADSCollection
+   :loc.preservation.inhibitorTarget/collection_PREMIS,
+   :madsrdf/isMemberOfMADSScheme [:loc.vocabulary/preservation
+                                  :loc.preservation/inhibitorTarget],
+   :rdf/type :madsrdf/Authority,
+   :skos/changeNote [{:cs/changeReason    "deprecated",
+                      :cs/createdDate     #inst "2018-09-24T04:00:01.000-00:00",
+                      :cs/creatorName     :loc.preservation.inhibitorTarget/all,
+                      :cs/subjectOfChange :loc.preservation.inhibitorTarget/all,
+                      :rdf/type           :cs/ChangeSet}
+                     {:cs/changeReason    "new",
+                      :cs/createdDate     #inst "2012-08-01T04:00:01.000-00:00",
+                      :cs/creatorName     :loc.preservation.inhibitorTarget/dlc,
+                      :cs/subjectOfChange :loc.preservation.inhibitorTarget/all,
+                      :rdf/type           :cs/ChangeSet}],
+   :skos/definition {:rdf/language "en",
+                     :rdf/value    "Inhibitor prohibits use of all content."},
+   :skos/inScheme [:loc.preservation/inhibitorTarget
+                   :loc.vocabulary/preservation],
+   :skos/notation "all",
+   :skos/prefLabel "All Content"})
 
 (def pla
-  "Play Function"
+  "Inhibitor prohibits function of play."
   {:db/ident :loc.preservation.inhibitorTarget/pla,
+   :madsrdf/adminMetadata
+   [{:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2012-08-01T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.inhibitorTarget/dlc,
+     :ri/recordStatus "new"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2018-09-24T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.inhibitorTarget/pla,
+     :ri/recordStatus "deprecated"}],
    :madsrdf/authoritativeLabel "Play Function",
-   :rdf/type :madsrdf/Authority})
+   :madsrdf/code "pla",
+   :madsrdf/definitionNote {:rdf/language "en",
+                            :rdf/value "Inhibitor prohibits function of play."},
+   :madsrdf/isMemberOfMADSCollection
+   :loc.preservation.inhibitorTarget/collection_PREMIS,
+   :madsrdf/isMemberOfMADSScheme [:loc.vocabulary/preservation
+                                  :loc.preservation/inhibitorTarget],
+   :madsrdf/useInstead :loc.preservation.eventType/ren,
+   :rdf/type :madsrdf/Authority,
+   :rdfs/seeAlso ["http://id.loc.gov/vocabulary/preservation/eventType/ren"],
+   :skos/changeNote [{:cs/changeReason    "deprecated",
+                      :cs/createdDate     #inst "2018-09-24T04:00:01.000-00:00",
+                      :cs/creatorName     :loc.preservation.inhibitorTarget/pla,
+                      :cs/subjectOfChange :loc.preservation.inhibitorTarget/pla,
+                      :rdf/type           :cs/ChangeSet}
+                     {:cs/changeReason    "new",
+                      :cs/createdDate     #inst "2012-08-01T04:00:01.000-00:00",
+                      :cs/creatorName     :loc.preservation.inhibitorTarget/dlc,
+                      :cs/subjectOfChange :loc.preservation.inhibitorTarget/pla,
+                      :rdf/type           :cs/ChangeSet}],
+   :skos/definition {:rdf/language "en",
+                     :rdf/value    "Inhibitor prohibits function of play."},
+   :skos/inScheme [:loc.preservation/inhibitorTarget
+                   :loc.vocabulary/preservation],
+   :skos/notation "pla",
+   :skos/prefLabel "Play Function"})
 
 (def prt
-  "Print Function"
+  "Inhibitor prohibits function of print."
   {:db/ident :loc.preservation.inhibitorTarget/prt,
+   :madsrdf/adminMetadata
+   [{:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2018-09-24T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.inhibitorTarget/prt,
+     :ri/recordStatus "deprecated"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2012-08-01T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.inhibitorTarget/dlc,
+     :ri/recordStatus "new"}],
    :madsrdf/authoritativeLabel "Print Function",
-   :rdf/type :madsrdf/Authority})
+   :madsrdf/code "prt",
+   :madsrdf/definitionNote {:rdf/language "en",
+                            :rdf/value
+                            "Inhibitor prohibits function of print."},
+   :madsrdf/isMemberOfMADSCollection
+   :loc.preservation.inhibitorTarget/collection_PREMIS,
+   :madsrdf/isMemberOfMADSScheme [:loc.vocabulary/preservation
+                                  :loc.preservation/inhibitorTarget],
+   :madsrdf/useInstead :loc.preservation.eventType/prt,
+   :rdf/type :madsrdf/Authority,
+   :rdfs/seeAlso ["http://id.loc.gov/vocabulary/preservation/eventType/prt"],
+   :skos/changeNote [{:cs/changeReason    "deprecated",
+                      :cs/createdDate     #inst "2018-09-24T04:00:01.000-00:00",
+                      :cs/creatorName     :loc.preservation.inhibitorTarget/prt,
+                      :cs/subjectOfChange :loc.preservation.inhibitorTarget/prt,
+                      :rdf/type           :cs/ChangeSet}
+                     {:cs/changeReason    "new",
+                      :cs/createdDate     #inst "2012-08-01T04:00:01.000-00:00",
+                      :cs/creatorName     :loc.preservation.inhibitorTarget/dlc,
+                      :cs/subjectOfChange :loc.preservation.inhibitorTarget/prt,
+                      :rdf/type           :cs/ChangeSet}],
+   :skos/definition {:rdf/language "en",
+                     :rdf/value    "Inhibitor prohibits function of print."},
+   :skos/inScheme [:loc.preservation/inhibitorTarget
+                   :loc.vocabulary/preservation],
+   :skos/notation "prt",
+   :skos/prefLabel "Print Function"})
 
 (def ^{:private true} inhibitorTarget
   "The content or function protected by the inhibitor."

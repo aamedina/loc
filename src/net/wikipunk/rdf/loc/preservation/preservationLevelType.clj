@@ -24,16 +24,72 @@
    "http://id.loc.gov/vocabulary/preservation/preservationLevelType/"})
 
 (def blp
-  "bit level preservation"
+  "Preservation of bits, i.e. the required preservation activities to ensure that the bits remain intact and readable (as sequences of 0's and 1's)."
   {:db/ident :loc.preservation.preservationLevelType/blp,
+   :madsrdf/adminMetadata
+   {:rdf/type :ri/RecordInfo,
+    :ri/recordChangeDate #inst "2018-09-24T04:00:01.000-00:00",
+    :ri/recordContentSource :loc.preservation.preservationLevelType/dlc,
+    :ri/recordStatus "new"},
    :madsrdf/authoritativeLabel "bit level preservation",
-   :rdf/type :madsrdf/Authority})
+   :madsrdf/code "blp",
+   :madsrdf/definitionNote
+   {:rdf/language "en",
+    :rdf/value
+    "Preservation of bits, i.e. the required preservation activities to ensure that the bits remain intact and readable (as sequences of 0's and 1's)."},
+   :madsrdf/isMemberOfMADSCollection
+   :loc.preservation.preservationLevelType/collection_PREMIS,
+   :madsrdf/isMemberOfMADSScheme [:loc.preservation/preservationLevelType
+                                  :loc.vocabulary/preservation],
+   :rdf/type :madsrdf/Authority,
+   :rdfs/subClassOf :premis/PreservationPolicy,
+   :skos/changeNote
+   {:cs/changeReason    "new",
+    :cs/createdDate     #inst "2018-09-24T04:00:01.000-00:00",
+    :cs/creatorName     :loc.preservation.preservationLevelType/dlc,
+    :cs/subjectOfChange :loc.preservation.preservationLevelType/blp,
+    :rdf/type           :cs/ChangeSet},
+   :skos/definition
+   {:rdf/language "en",
+    :rdf/value
+    "Preservation of bits, i.e. the required preservation activities to ensure that the bits remain intact and readable (as sequences of 0's and 1's)."},
+   :skos/inScheme [:loc.preservation/preservationLevelType
+                   :loc.vocabulary/preservation],
+   :skos/notation "blp",
+   :skos/prefLabel "bit level preservation"})
 
 (def lop
-  "logical preservation"
+  "Preservation of the logical part, i.e. the part of digital preservation that ensures that the bits remain understandable and usable according to the preservation purposes."
   {:db/ident :loc.preservation.preservationLevelType/lop,
+   :madsrdf/adminMetadata
+   {:rdf/type :ri/RecordInfo,
+    :ri/recordChangeDate #inst "2018-09-24T04:00:01.000-00:00",
+    :ri/recordContentSource :loc.preservation.preservationLevelType/dlc,
+    :ri/recordStatus "new"},
    :madsrdf/authoritativeLabel "logical preservation",
-   :rdf/type :madsrdf/Authority})
+   :madsrdf/code "lop",
+   :madsrdf/definitionNote
+   {:rdf/language "en",
+    :rdf/value
+    "Preservation of the logical part, i.e. the part of digital preservation that ensures that the bits remain understandable and usable according to the preservation purposes."},
+   :madsrdf/isMemberOfMADSScheme [:loc.vocabulary/preservation
+                                  :loc.preservation/preservationLevelType],
+   :rdf/type :madsrdf/Authority,
+   :rdfs/subClassOf :premis/PreservationPolicy,
+   :skos/changeNote
+   {:cs/changeReason    "new",
+    :cs/createdDate     #inst "2018-09-24T04:00:01.000-00:00",
+    :cs/creatorName     :loc.preservation.preservationLevelType/dlc,
+    :cs/subjectOfChange :loc.preservation.preservationLevelType/lop,
+    :rdf/type           :cs/ChangeSet},
+   :skos/definition
+   {:rdf/language "en",
+    :rdf/value
+    "Preservation of the logical part, i.e. the part of digital preservation that ensures that the bits remain understandable and usable according to the preservation purposes."},
+   :skos/inScheme [:loc.preservation/preservationLevelType
+                   :loc.vocabulary/preservation],
+   :skos/notation "lop",
+   :skos/prefLabel "logical preservation"})
 
 (def ^{:private true} preservationLevelType
   "The type of preservation functions expected to be applied to the Object for the preservation level."

@@ -24,37 +24,178 @@
   (:refer-clojure :exclude [int]))
 
 (def cap
-  "capability"
+  "An indication of the level at which an institution is currently capable of preserving an object."
   {:db/ident :loc.preservation.preservationLevelRole/cap,
+   :madsrdf/adminMetadata
+   [{:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2010-06-01T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.preservationLevelRole/dlc,
+     :ri/recordStatus "new"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2012-08-01T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.preservationLevelRole/dlc,
+     :ri/recordStatus "modified"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2018-09-24T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.preservationLevelRole/dlc,
+     :ri/recordStatus "modified"}],
    :madsrdf/authoritativeLabel "capability",
-   :rdf/type :madsrdf/Authority})
+   :madsrdf/code "cap",
+   :madsrdf/definitionNote
+   {:rdf/language "en",
+    :rdf/value
+    "An indication of the level at which an institution is currently capable of preserving an object."},
+   :madsrdf/isMemberOfMADSCollection
+   :loc.preservation.preservationLevelRole/collection_PREMIS,
+   :madsrdf/isMemberOfMADSScheme [:loc.vocabulary/preservation
+                                  :loc.preservation/preservationLevelRole],
+   :rdf/type :madsrdf/Authority,
+   :rdfs/subPropertyOf :premis/policy,
+   :skos/changeNote
+   [{:cs/changeReason    "modified",
+     :cs/createdDate     #inst "2018-09-24T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.preservationLevelRole/dlc,
+     :cs/subjectOfChange :loc.preservation.preservationLevelRole/cap,
+     :rdf/type           :cs/ChangeSet}
+    {:cs/changeReason    "modified",
+     :cs/createdDate     #inst "2012-08-01T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.preservationLevelRole/dlc,
+     :cs/subjectOfChange :loc.preservation.preservationLevelRole/cap,
+     :rdf/type           :cs/ChangeSet}
+    {:cs/changeReason    "new",
+     :cs/createdDate     #inst "2010-06-01T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.preservationLevelRole/dlc,
+     :cs/subjectOfChange :loc.preservation.preservationLevelRole/cap,
+     :rdf/type           :cs/ChangeSet}],
+   :skos/definition
+   {:rdf/language "en",
+    :rdf/value
+    "An indication of the level at which an institution is currently capable of preserving an object."},
+   :skos/inScheme [:loc.preservation/preservationLevelRole
+                   :loc.vocabulary/preservation],
+   :skos/notation "cap",
+   :skos/prefLabel "capability"})
 
 (def int
-  "intention"
+  "An indication of the level at which an institution intends to preserve an object, which may vary from current capability."
   {:db/ident :loc.preservation.preservationLevelRole/int,
+   :madsrdf/adminMetadata
+   [{:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2018-09-24T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.preservationLevelRole/dlc,
+     :ri/recordStatus "modified"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2012-08-01T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.preservationLevelRole/dlc,
+     :ri/recordStatus "modified"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2010-06-01T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.preservationLevelRole/dlc,
+     :ri/recordStatus "new"}],
    :madsrdf/authoritativeLabel "intention",
-   :rdf/type :madsrdf/Authority})
+   :madsrdf/code "int",
+   :madsrdf/definitionNote
+   {:rdf/language "en",
+    :rdf/value
+    "An indication of the level at which an institution intends to preserve an object, which may vary from current capability."},
+   :madsrdf/isMemberOfMADSCollection
+   :loc.preservation.preservationLevelRole/collection_PREMIS,
+   :madsrdf/isMemberOfMADSScheme [:loc.preservation/preservationLevelRole
+                                  :loc.vocabulary/preservation],
+   :rdf/type :madsrdf/Authority,
+   :rdfs/subPropertyOf :premis/policy,
+   :skos/changeNote
+   [{:cs/changeReason    "modified",
+     :cs/createdDate     #inst "2012-08-01T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.preservationLevelRole/dlc,
+     :cs/subjectOfChange :loc.preservation.preservationLevelRole/int,
+     :rdf/type           :cs/ChangeSet}
+    {:cs/changeReason    "new",
+     :cs/createdDate     #inst "2010-06-01T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.preservationLevelRole/dlc,
+     :cs/subjectOfChange :loc.preservation.preservationLevelRole/int,
+     :rdf/type           :cs/ChangeSet}
+    {:cs/changeReason    "modified",
+     :cs/createdDate     #inst "2018-09-24T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.preservationLevelRole/dlc,
+     :cs/subjectOfChange :loc.preservation.preservationLevelRole/int,
+     :rdf/type           :cs/ChangeSet}],
+   :skos/definition
+   {:rdf/language "en",
+    :rdf/value
+    "An indication of the level at which an institution intends to preserve an object, which may vary from current capability."},
+   :skos/inScheme [:loc.preservation/preservationLevelRole
+                   :loc.vocabulary/preservation],
+   :skos/notation "int",
+   :skos/prefLabel "intention"})
 
 (def req
-  "requirement"
+  "An indication of the level at which an institution is obligated to preserve an object, for example for legal reasons."
   {:db/ident :loc.preservation.preservationLevelRole/req,
+   :madsrdf/adminMetadata
+   [{:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2012-08-01T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.preservationLevelRole/dlc,
+     :ri/recordStatus "modified"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2018-09-24T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.preservationLevelRole/dlc,
+     :ri/recordStatus "modified"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2010-06-01T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.preservationLevelRole/dlc,
+     :ri/recordStatus "new"}],
    :madsrdf/authoritativeLabel "requirement",
-   :rdf/type :madsrdf/Authority})
+   :madsrdf/code "req",
+   :madsrdf/definitionNote
+   {:rdf/language "en",
+    :rdf/value
+    "An indication of the level at which an institution is obligated to preserve an object, for example for legal reasons."},
+   :madsrdf/isMemberOfMADSCollection
+   :loc.preservation.preservationLevelRole/collection_PREMIS,
+   :madsrdf/isMemberOfMADSScheme [:loc.vocabulary/preservation
+                                  :loc.preservation/preservationLevelRole],
+   :rdf/type :madsrdf/Authority,
+   :rdfs/subPropertyOf :premis/policy,
+   :skos/changeNote
+   [{:cs/changeReason    "modified",
+     :cs/createdDate     #inst "2012-08-01T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.preservationLevelRole/dlc,
+     :cs/subjectOfChange :loc.preservation.preservationLevelRole/req,
+     :rdf/type           :cs/ChangeSet}
+    {:cs/changeReason    "new",
+     :cs/createdDate     #inst "2010-06-01T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.preservationLevelRole/dlc,
+     :cs/subjectOfChange :loc.preservation.preservationLevelRole/req,
+     :rdf/type           :cs/ChangeSet}
+    {:cs/changeReason    "modified",
+     :cs/createdDate     #inst "2018-09-24T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.preservationLevelRole/dlc,
+     :cs/subjectOfChange :loc.preservation.preservationLevelRole/req,
+     :rdf/type           :cs/ChangeSet}],
+   :skos/definition
+   {:rdf/language "en",
+    :rdf/value
+    "An indication of the level at which an institution is obligated to preserve an object, for example for legal reasons."},
+   :skos/inScheme [:loc.vocabulary/preservation
+                   :loc.preservation/preservationLevelRole],
+   :skos/notation "req",
+   :skos/prefLabel "requirement"})
 
 (def ^{:private true} preservationLevelRole
   "Preservation Level Role"
   {:db/ident        :loc.preservation/preservationLevelRole,
    :madsrdf/adminMetadata
    [{:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2012-08-01T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation/dlc,
+     :ri/recordStatus "modified"}
+    {:rdf/type :ri/RecordInfo,
      :ri/recordChangeDate #inst "2010-06-01T04:00:01.000-00:00",
      :ri/recordContentSource :loc.preservation/dlc,
      :ri/recordStatus "new"}
     {:rdf/type :ri/RecordInfo,
      :ri/recordChangeDate #inst "2018-09-24T04:00:01.000-00:00",
-     :ri/recordContentSource :loc.preservation/dlc,
-     :ri/recordStatus "modified"}
-    {:rdf/type :ri/RecordInfo,
-     :ri/recordChangeDate #inst "2012-08-01T04:00:01.000-00:00",
      :ri/recordContentSource :loc.preservation/dlc,
      :ri/recordStatus "modified"}],
    :madsrdf/hasMADSSchemeMember [:loc.preservation.preservationLevelRole/int
@@ -65,6 +206,12 @@
    :rdfs/label      {:rdf/language "en",
                      :rdf/value    "Preservation Level Role"},
    :skos/changeNote [{:cs/changeReason "modified",
+                      :cs/createdDate #inst "2012-08-01T04:00:01.000-00:00",
+                      :cs/creatorName :loc.preservation/dlc,
+                      :cs/subjectOfChange
+                      :loc.preservation/preservationLevelRole,
+                      :rdf/type :cs/ChangeSet}
+                     {:cs/changeReason "modified",
                       :cs/createdDate #inst "2018-09-24T04:00:01.000-00:00",
                       :cs/creatorName :loc.preservation/dlc,
                       :cs/subjectOfChange
@@ -72,12 +219,6 @@
                       :rdf/type :cs/ChangeSet}
                      {:cs/changeReason "new",
                       :cs/createdDate #inst "2010-06-01T04:00:01.000-00:00",
-                      :cs/creatorName :loc.preservation/dlc,
-                      :cs/subjectOfChange
-                      :loc.preservation/preservationLevelRole,
-                      :rdf/type :cs/ChangeSet}
-                     {:cs/changeReason "modified",
-                      :cs/createdDate #inst "2012-08-01T04:00:01.000-00:00",
                       :cs/creatorName :loc.preservation/dlc,
                       :cs/subjectOfChange
                       :loc.preservation/preservationLevelRole,

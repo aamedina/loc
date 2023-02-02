@@ -24,43 +24,224 @@
   (:refer-clojure :exclude [val]))
 
 (def aut
-  "authorizer"
+  "The agent that gave permission for the event."
   {:db/ident :loc.preservation.eventRelatedAgentRole/aut,
+   :madsrdf/adminMetadata
+   [{:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2012-08-01T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.eventRelatedAgentRole/dlc,
+     :ri/recordStatus "new"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2018-09-24T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.eventRelatedAgentRole/aut,
+     :ri/recordStatus "modified"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2017-03-10T05:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.eventRelatedAgentRole/aut,
+     :ri/recordStatus "modified"}],
    :madsrdf/authoritativeLabel "authorizer",
-   :rdf/type :madsrdf/Authority})
+   :madsrdf/code "aut",
+   :madsrdf/definitionNote {:rdf/language "en",
+                            :rdf/value
+                            "The agent that gave permission for the event."},
+   :madsrdf/isMemberOfMADSCollection
+   :loc.preservation.eventRelatedAgentRole/collection_PREMIS,
+   :madsrdf/isMemberOfMADSScheme [:loc.preservation/eventRelatedAgentRole
+                                  :loc.vocabulary/preservation],
+   :madsrdf/useFor :loc.preservation.linkingAgentRoleEvent/aut,
+   :rdf/type :madsrdf/Authority,
+   :rdfs/subPropertyOf :prov/wasAssociatedWith,
+   :skos/changeNote
+   [{:cs/changeReason    "modified",
+     :cs/createdDate     #inst "2017-03-10T05:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.eventRelatedAgentRole/aut,
+     :cs/subjectOfChange :loc.preservation.eventRelatedAgentRole/aut,
+     :rdf/type           :cs/ChangeSet}
+    {:cs/changeReason    "new",
+     :cs/createdDate     #inst "2012-08-01T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.eventRelatedAgentRole/dlc,
+     :cs/subjectOfChange :loc.preservation.eventRelatedAgentRole/aut,
+     :rdf/type           :cs/ChangeSet}
+    {:cs/changeReason    "modified",
+     :cs/createdDate     #inst "2018-09-24T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.eventRelatedAgentRole/aut,
+     :cs/subjectOfChange :loc.preservation.eventRelatedAgentRole/aut,
+     :rdf/type           :cs/ChangeSet}],
+   :skos/definition {:rdf/language "en",
+                     :rdf/value
+                     "The agent that gave permission for the event."},
+   :skos/inScheme [:loc.preservation/eventRelatedAgentRole
+                   :loc.vocabulary/preservation],
+   :skos/notation "aut",
+   :skos/prefLabel "authorizer"})
 
 (def exe
-  "executing program"
+  "The software agent that executes a program."
   {:db/ident :loc.preservation.eventRelatedAgentRole/exe,
+   :madsrdf/adminMetadata
+   [{:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2012-08-01T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.eventRelatedAgentRole/dlc,
+     :ri/recordStatus "new"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2017-03-10T05:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.eventRelatedAgentRole/exe,
+     :ri/recordStatus "modified"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2018-09-24T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.eventRelatedAgentRole/exe,
+     :ri/recordStatus "modified"}],
    :madsrdf/authoritativeLabel "executing program",
-   :rdf/type :madsrdf/Authority})
+   :madsrdf/code "exe",
+   :madsrdf/definitionNote {:rdf/language "en",
+                            :rdf/value
+                            "The software agent that executes a program."},
+   :madsrdf/isMemberOfMADSCollection
+   :loc.preservation.eventRelatedAgentRole/collection_PREMIS,
+   :madsrdf/isMemberOfMADSScheme [:loc.preservation/eventRelatedAgentRole
+                                  :loc.vocabulary/preservation],
+   :madsrdf/useFor :loc.preservation.linkingAgentRoleEvent/exe,
+   :rdf/type :madsrdf/Authority,
+   :rdfs/subPropertyOf :prov/wasAssociatedWith,
+   :skos/changeNote
+   [{:cs/changeReason    "modified",
+     :cs/createdDate     #inst "2018-09-24T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.eventRelatedAgentRole/exe,
+     :cs/subjectOfChange :loc.preservation.eventRelatedAgentRole/exe,
+     :rdf/type           :cs/ChangeSet}
+    {:cs/changeReason    "new",
+     :cs/createdDate     #inst "2012-08-01T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.eventRelatedAgentRole/dlc,
+     :cs/subjectOfChange :loc.preservation.eventRelatedAgentRole/exe,
+     :rdf/type           :cs/ChangeSet}
+    {:cs/changeReason    "modified",
+     :cs/createdDate     #inst "2017-03-10T05:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.eventRelatedAgentRole/exe,
+     :cs/subjectOfChange :loc.preservation.eventRelatedAgentRole/exe,
+     :rdf/type           :cs/ChangeSet}],
+   :skos/definition {:rdf/language "en",
+                     :rdf/value "The software agent that executes a program."},
+   :skos/inScheme [:loc.vocabulary/preservation
+                   :loc.preservation/eventRelatedAgentRole],
+   :skos/notation "exe",
+   :skos/prefLabel "executing program"})
 
 (def imp
-  "implementer"
+  "The agent that carries out the event."
   {:db/ident :loc.preservation.eventRelatedAgentRole/imp,
+   :madsrdf/adminMetadata
+   [{:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2017-03-10T05:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.eventRelatedAgentRole/imp,
+     :ri/recordStatus "modified"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2018-09-24T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.eventRelatedAgentRole/imp,
+     :ri/recordStatus "modified"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2012-08-01T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.eventRelatedAgentRole/dlc,
+     :ri/recordStatus "new"}],
    :madsrdf/authoritativeLabel "implementer",
-   :rdf/type :madsrdf/Authority})
+   :madsrdf/code "imp",
+   :madsrdf/definitionNote {:rdf/language "en",
+                            :rdf/value "The agent that carries out the event."},
+   :madsrdf/isMemberOfMADSCollection
+   :loc.preservation.eventRelatedAgentRole/collection_PREMIS,
+   :madsrdf/isMemberOfMADSScheme [:loc.preservation/eventRelatedAgentRole
+                                  :loc.vocabulary/preservation],
+   :madsrdf/useFor :loc.preservation.linkingAgentRoleEvent/imp,
+   :rdf/type :madsrdf/Authority,
+   :rdfs/subPropertyOf :prov/wasAssociatedWith,
+   :skos/changeNote
+   [{:cs/changeReason    "new",
+     :cs/createdDate     #inst "2012-08-01T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.eventRelatedAgentRole/dlc,
+     :cs/subjectOfChange :loc.preservation.eventRelatedAgentRole/imp,
+     :rdf/type           :cs/ChangeSet}
+    {:cs/changeReason    "modified",
+     :cs/createdDate     #inst "2017-03-10T05:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.eventRelatedAgentRole/imp,
+     :cs/subjectOfChange :loc.preservation.eventRelatedAgentRole/imp,
+     :rdf/type           :cs/ChangeSet}
+    {:cs/changeReason    "modified",
+     :cs/createdDate     #inst "2018-09-24T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.eventRelatedAgentRole/imp,
+     :cs/subjectOfChange :loc.preservation.eventRelatedAgentRole/imp,
+     :rdf/type           :cs/ChangeSet}],
+   :skos/definition {:rdf/language "en",
+                     :rdf/value    "The agent that carries out the event."},
+   :skos/inScheme [:loc.vocabulary/preservation
+                   :loc.preservation/eventRelatedAgentRole],
+   :skos/notation "imp",
+   :skos/prefLabel "implementer"})
 
 (def val
-  "validator"
+  "The agent that checks whether specified requirements are met."
   {:db/ident :loc.preservation.eventRelatedAgentRole/val,
+   :madsrdf/adminMetadata
+   [{:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2018-09-24T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.eventRelatedAgentRole/val,
+     :ri/recordStatus "modified"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2017-03-10T05:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.eventRelatedAgentRole/val,
+     :ri/recordStatus "modified"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2012-08-01T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.eventRelatedAgentRole/dlc,
+     :ri/recordStatus "new"}],
    :madsrdf/authoritativeLabel "validator",
-   :rdf/type :madsrdf/Authority})
+   :madsrdf/code "val",
+   :madsrdf/definitionNote
+   {:rdf/language "en",
+    :rdf/value "The agent that checks whether specified requirements are met."},
+   :madsrdf/isMemberOfMADSCollection
+   :loc.preservation.eventRelatedAgentRole/collection_PREMIS,
+   :madsrdf/isMemberOfMADSScheme [:loc.vocabulary/preservation
+                                  :loc.preservation/eventRelatedAgentRole],
+   :madsrdf/useFor :loc.preservation.linkingAgentRoleEvent/val,
+   :rdf/type :madsrdf/Authority,
+   :rdfs/subPropertyOf :prov/wasAssociatedWith,
+   :skos/changeNote
+   [{:cs/changeReason    "new",
+     :cs/createdDate     #inst "2012-08-01T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.eventRelatedAgentRole/dlc,
+     :cs/subjectOfChange :loc.preservation.eventRelatedAgentRole/val,
+     :rdf/type           :cs/ChangeSet}
+    {:cs/changeReason    "modified",
+     :cs/createdDate     #inst "2017-03-10T05:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.eventRelatedAgentRole/val,
+     :cs/subjectOfChange :loc.preservation.eventRelatedAgentRole/val,
+     :rdf/type           :cs/ChangeSet}
+    {:cs/changeReason    "modified",
+     :cs/createdDate     #inst "2018-09-24T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.eventRelatedAgentRole/val,
+     :cs/subjectOfChange :loc.preservation.eventRelatedAgentRole/val,
+     :rdf/type           :cs/ChangeSet}],
+   :skos/definition
+   {:rdf/language "en",
+    :rdf/value "The agent that checks whether specified requirements are met."},
+   :skos/inScheme [:loc.vocabulary/preservation
+                   :loc.preservation/eventRelatedAgentRole],
+   :skos/notation "val",
+   :skos/prefLabel "validator"})
 
 (def ^{:private true} eventRelatedAgentRole
   "The role of the agent in relation to the described event."
   {:db/ident :loc.preservation/eventRelatedAgentRole,
    :madsrdf/adminMetadata
    [{:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2018-09-24T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation/eventRelatedAgentRole.rdf,
+     :ri/recordStatus "modified"}
+    {:rdf/type :ri/RecordInfo,
      :ri/recordChangeDate #inst "2012-08-01T04:00:01.000-00:00",
      :ri/recordContentSource :loc.preservation/dlc,
      :ri/recordStatus "new"}
     {:rdf/type :ri/RecordInfo,
      :ri/recordChangeDate #inst "2017-03-10T05:00:01.000-00:00",
-     :ri/recordContentSource :loc.preservation/eventRelatedAgentRole.rdf,
-     :ri/recordStatus "modified"}
-    {:rdf/type :ri/RecordInfo,
-     :ri/recordChangeDate #inst "2018-09-24T04:00:01.000-00:00",
      :ri/recordContentSource :loc.preservation/eventRelatedAgentRole.rdf,
      :ri/recordStatus "modified"}],
    :madsrdf/hasMADSSchemeMember [:loc.preservation.eventRelatedAgentRole/imp
@@ -73,18 +254,18 @@
    :rdfs/label {:rdf/language "en",
                 :rdf/value    "Event Related Agent Role"},
    :skos/changeNote
-   [{:cs/changeReason    "modified",
-     :cs/createdDate     #inst "2018-09-24T04:00:01.000-00:00",
-     :cs/creatorName     :loc.preservation/eventRelatedAgentRole.rdf,
-     :cs/subjectOfChange :loc.preservation/eventRelatedAgentRole,
-     :rdf/type           :cs/ChangeSet}
-    {:cs/changeReason    "new",
+   [{:cs/changeReason    "new",
      :cs/createdDate     #inst "2012-08-01T04:00:01.000-00:00",
      :cs/creatorName     :loc.preservation/dlc,
      :cs/subjectOfChange :loc.preservation/eventRelatedAgentRole,
      :rdf/type           :cs/ChangeSet}
     {:cs/changeReason    "modified",
      :cs/createdDate     #inst "2017-03-10T05:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation/eventRelatedAgentRole.rdf,
+     :cs/subjectOfChange :loc.preservation/eventRelatedAgentRole,
+     :rdf/type           :cs/ChangeSet}
+    {:cs/changeReason    "modified",
+     :cs/createdDate     #inst "2018-09-24T04:00:01.000-00:00",
      :cs/creatorName     :loc.preservation/eventRelatedAgentRole.rdf,
      :cs/subjectOfChange :loc.preservation/eventRelatedAgentRole,
      :rdf/type           :cs/ChangeSet}]})

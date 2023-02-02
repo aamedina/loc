@@ -24,22 +24,136 @@
    "http://id.loc.gov/vocabulary/preservation/linkingEnvironmentRole/"})
 
 (def byt
-  "byte code"
+  "The object is represented as programming code that, once compiled, is run through a virtual machine instead of the computer's processor."
   {:db/ident :loc.preservation.linkingEnvironmentRole/byt,
+   :madsrdf/adminMetadata
+   [{:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2018-09-24T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.linkingEnvironmentRole/dlc,
+     :ri/recordStatus "modified"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2016-01-21T05:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.linkingEnvironmentRole/dlc,
+     :ri/recordStatus "new"}],
    :madsrdf/authoritativeLabel "byte code",
-   :rdf/type :madsrdf/Authority})
+   :madsrdf/code "byt",
+   :madsrdf/definitionNote
+   {:rdf/language "en",
+    :rdf/value
+    "The object is represented as programming code that, once compiled, is run through a virtual machine instead of the computer's processor."},
+   :madsrdf/isMemberOfMADSCollection
+   :loc.preservation.linkingEnvironmentRole/collection_PREMIS,
+   :madsrdf/isMemberOfMADSScheme [:loc.preservation/linkingEnvironmentRole
+                                  :loc.vocabulary/preservation],
+   :rdf/type :madsrdf/Authority,
+   :rdfs/subPropertyOf :premis/relationship,
+   :skos/changeNote
+   [{:cs/changeReason    "modified",
+     :cs/createdDate     #inst "2018-09-24T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.linkingEnvironmentRole/dlc,
+     :cs/subjectOfChange :loc.preservation.linkingEnvironmentRole/byt,
+     :rdf/type           :cs/ChangeSet}
+    {:cs/changeReason    "new",
+     :cs/createdDate     #inst "2016-01-21T05:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.linkingEnvironmentRole/dlc,
+     :cs/subjectOfChange :loc.preservation.linkingEnvironmentRole/byt,
+     :rdf/type           :cs/ChangeSet}],
+   :skos/definition
+   {:rdf/language "en",
+    :rdf/value
+    "The object is represented as programming code that, once compiled, is run through a virtual machine instead of the computer's processor."},
+   :skos/inScheme [:loc.vocabulary/preservation
+                   :loc.preservation/linkingEnvironmentRole],
+   :skos/notation "byt",
+   :skos/prefLabel "byte code"})
 
 (def dis
-  "disk image"
+  "The object is represented as an exact copy of the computer's hard drive."
   {:db/ident :loc.preservation.linkingEnvironmentRole/dis,
+   :madsrdf/adminMetadata
+   [{:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2016-01-21T05:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.linkingEnvironmentRole/dlc,
+     :ri/recordStatus "new"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2018-09-24T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.linkingEnvironmentRole/dlc,
+     :ri/recordStatus "modified"}],
    :madsrdf/authoritativeLabel "disk image",
-   :rdf/type :madsrdf/Authority})
+   :madsrdf/code "dis",
+   :madsrdf/definitionNote
+   {:rdf/language "en",
+    :rdf/value
+    "The object is represented as an exact copy of the computer's hard drive."},
+   :madsrdf/isMemberOfMADSCollection
+   :loc.preservation.linkingEnvironmentRole/collection_PREMIS,
+   :madsrdf/isMemberOfMADSScheme [:loc.preservation/linkingEnvironmentRole
+                                  :loc.vocabulary/preservation],
+   :rdf/type :madsrdf/Authority,
+   :rdfs/subPropertyOf :premis/relationship,
+   :skos/changeNote
+   [{:cs/changeReason    "modified",
+     :cs/createdDate     #inst "2018-09-24T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.linkingEnvironmentRole/dlc,
+     :cs/subjectOfChange :loc.preservation.linkingEnvironmentRole/dis,
+     :rdf/type           :cs/ChangeSet}
+    {:cs/changeReason    "new",
+     :cs/createdDate     #inst "2016-01-21T05:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.linkingEnvironmentRole/dlc,
+     :cs/subjectOfChange :loc.preservation.linkingEnvironmentRole/dis,
+     :rdf/type           :cs/ChangeSet}],
+   :skos/definition
+   {:rdf/language "en",
+    :rdf/value
+    "The object is represented as an exact copy of the computer's hard drive."},
+   :skos/inScheme [:loc.preservation/linkingEnvironmentRole
+                   :loc.vocabulary/preservation],
+   :skos/notation "dis",
+   :skos/prefLabel "disk image"})
 
 (def sou
-  "source code"
+  "The object is represented as program instructions in their original form written by developers, not directly executable by the computer."
   {:db/ident :loc.preservation.linkingEnvironmentRole/sou,
+   :madsrdf/adminMetadata
+   [{:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2018-09-24T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.linkingEnvironmentRole/dlc,
+     :ri/recordStatus "modified"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2016-01-21T05:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.linkingEnvironmentRole/dlc,
+     :ri/recordStatus "new"}],
    :madsrdf/authoritativeLabel "source code",
-   :rdf/type :madsrdf/Authority})
+   :madsrdf/code "sou",
+   :madsrdf/definitionNote
+   {:rdf/language "en",
+    :rdf/value
+    "The object is represented as program instructions in their original form written by developers, not directly executable by the computer."},
+   :madsrdf/isMemberOfMADSCollection
+   :loc.preservation.linkingEnvironmentRole/collection_PREMIS,
+   :madsrdf/isMemberOfMADSScheme [:loc.preservation/linkingEnvironmentRole
+                                  :loc.vocabulary/preservation],
+   :rdf/type :madsrdf/Authority,
+   :rdfs/subPropertyOf :premis/relationship,
+   :skos/changeNote
+   [{:cs/changeReason    "new",
+     :cs/createdDate     #inst "2016-01-21T05:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.linkingEnvironmentRole/dlc,
+     :cs/subjectOfChange :loc.preservation.linkingEnvironmentRole/sou,
+     :rdf/type           :cs/ChangeSet}
+    {:cs/changeReason    "modified",
+     :cs/createdDate     #inst "2018-09-24T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.linkingEnvironmentRole/dlc,
+     :cs/subjectOfChange :loc.preservation.linkingEnvironmentRole/sou,
+     :rdf/type           :cs/ChangeSet}],
+   :skos/definition
+   {:rdf/language "en",
+    :rdf/value
+    "The object is represented as program instructions in their original form written by developers, not directly executable by the computer."},
+   :skos/inScheme [:loc.vocabulary/preservation
+                   :loc.preservation/linkingEnvironmentRole],
+   :skos/notation "sou",
+   :skos/prefLabel "source code"})
 
 (def ^{:private true} linkingEnvironmentRole
   "The role of the environment object associated with the agent, which allows one to record in what form the software or hardware has been preserved in the repository."
@@ -62,13 +176,13 @@
    :rdfs/label {:rdf/language "en",
                 :rdf/value    "Linking Environment Role"},
    :skos/changeNote
-   [{:cs/changeReason    "modified",
-     :cs/createdDate     #inst "2018-09-24T04:00:01.000-00:00",
+   [{:cs/changeReason    "new",
+     :cs/createdDate     #inst "2016-01-21T05:00:01.000-00:00",
      :cs/creatorName     :loc.preservation/dlc,
      :cs/subjectOfChange :loc.preservation/linkingEnvironmentRole,
      :rdf/type           :cs/ChangeSet}
-    {:cs/changeReason    "new",
-     :cs/createdDate     #inst "2016-01-21T05:00:01.000-00:00",
+    {:cs/changeReason    "modified",
+     :cs/createdDate     #inst "2018-09-24T04:00:01.000-00:00",
      :cs/creatorName     :loc.preservation/dlc,
      :cs/subjectOfChange :loc.preservation/linkingEnvironmentRole,
      :rdf/type           :cs/ChangeSet}]})

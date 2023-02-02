@@ -24,166 +24,1282 @@
   (:refer-clojure :exclude [inc]))
 
 (def cmf
-  "compressed from"
+  "A relationship between an object that has been encoded in a way so that it can be stored or transmitted in significantly fewer bits. Has a reciprocal relationship of compressedTo."
   {:db/ident :loc.preservation.relationshipSubType/cmf,
+   :madsrdf/adminMetadata
+   {:rdf/type :ri/RecordInfo,
+    :ri/recordChangeDate #inst "2012-08-01T04:00:01.000-00:00",
+    :ri/recordContentSource :loc.preservation.relationshipSubType/dlc,
+    :ri/recordStatus "new"},
    :madsrdf/authoritativeLabel "compressed from",
-   :rdf/type :madsrdf/Authority})
+   :madsrdf/code "cmf",
+   :madsrdf/definitionNote
+   {:rdf/language "en",
+    :rdf/value
+    "A relationship between an object that has been encoded in a way so that it can be stored or transmitted in significantly fewer bits. Has a reciprocal relationship of compressedTo."},
+   :madsrdf/hasBroaderAuthority :loc.preservation.relationshipType/der,
+   :madsrdf/isMemberOfMADSCollection
+   :loc.preservation.relationshipSubType/collection_PREMIS,
+   :madsrdf/isMemberOfMADSScheme [:loc.preservation/relationshipSubType
+                                  :loc.vocabulary/preservation],
+   :rdf/type :madsrdf/Authority,
+   :rdfs/subPropertyOf :premis/relationship,
+   :skos/broader :loc.preservation.relationshipType/der,
+   :skos/changeNote {:cs/changeReason "new",
+                     :cs/createdDate #inst "2012-08-01T04:00:01.000-00:00",
+                     :cs/creatorName :loc.preservation.relationshipSubType/dlc,
+                     :cs/subjectOfChange
+                     :loc.preservation.relationshipSubType/cmf,
+                     :rdf/type :cs/ChangeSet},
+   :skos/definition
+   {:rdf/language "en",
+    :rdf/value
+    "A relationship between an object that has been encoded in a way so that it can be stored or transmitted in significantly fewer bits. Has a reciprocal relationship of compressedTo."},
+   :skos/inScheme [:loc.preservation/relationshipSubType
+                   :loc.vocabulary/preservation],
+   :skos/notation "cmf",
+   :skos/prefLabel "compressed from"})
 
 (def cmt
-  "compressed to"
+  "A relationship between an object and another object that is encoded it in a way that it can be stored or transmitted in signficantly fewer bits. Has a reciprocal relationship of compressedFrom"
   {:db/ident :loc.preservation.relationshipSubType/cmt,
+   :madsrdf/adminMetadata
+   {:rdf/type :ri/RecordInfo,
+    :ri/recordChangeDate #inst "2012-08-01T04:00:01.000-00:00",
+    :ri/recordContentSource :loc.preservation.relationshipSubType/dlc,
+    :ri/recordStatus "new"},
    :madsrdf/authoritativeLabel "compressed to",
-   :rdf/type :madsrdf/Authority})
+   :madsrdf/code "cmt",
+   :madsrdf/definitionNote
+   {:rdf/language "en",
+    :rdf/value
+    "A relationship between an object and another object that is encoded it in a way that it can be stored or transmitted in signficantly fewer bits. Has a reciprocal relationship of compressedFrom"},
+   :madsrdf/hasBroaderAuthority :loc.preservation.relationshipType/der,
+   :madsrdf/isMemberOfMADSCollection
+   :loc.preservation.relationshipSubType/collection_PREMIS,
+   :madsrdf/isMemberOfMADSScheme [:loc.vocabulary/preservation
+                                  :loc.preservation/relationshipSubType],
+   :rdf/type :madsrdf/Authority,
+   :rdfs/subPropertyOf :premis/relationship,
+   :skos/broader :loc.preservation.relationshipType/der,
+   :skos/changeNote {:cs/changeReason "new",
+                     :cs/createdDate #inst "2012-08-01T04:00:01.000-00:00",
+                     :cs/creatorName :loc.preservation.relationshipSubType/dlc,
+                     :cs/subjectOfChange
+                     :loc.preservation.relationshipSubType/cmt,
+                     :rdf/type :cs/ChangeSet},
+   :skos/definition
+   {:rdf/language "en",
+    :rdf/value
+    "A relationship between an object and another object that is encoded it in a way that it can be stored or transmitted in signficantly fewer bits. Has a reciprocal relationship of compressedFrom"},
+   :skos/inScheme [:loc.preservation/relationshipSubType
+                   :loc.vocabulary/preservation],
+   :skos/notation "cmt",
+   :skos/prefLabel "compressed to"})
 
 (def doc
-  "documents"
+  "A relationship between information about an environment object and the environment object itself. For instance, a user manual has a \"documents\" relationship to the Open Office software application. Has a reciprocal relationship of isDocumentedIn."
   {:db/ident :loc.preservation.relationshipSubType/doc,
+   :madsrdf/adminMetadata
+   [{:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2018-09-24T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.relationshipSubType/dlc,
+     :ri/recordStatus "modified"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2016-03-15T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.relationshipSubType/dlc,
+     :ri/recordStatus "new"}],
    :madsrdf/authoritativeLabel "documents",
-   :rdf/type :madsrdf/Authority})
+   :madsrdf/code "doc",
+   :madsrdf/definitionNote
+   {:rdf/language "en",
+    :rdf/value
+    "A relationship between information about an environment object and the environment object itself. For instance, a user manual has a \"documents\" relationship to the Open Office software application. Has a reciprocal relationship of isDocumentedIn."},
+   :madsrdf/hasBroaderAuthority :loc.preservation.relationshipType/ref,
+   :madsrdf/isMemberOfMADSCollection
+   :loc.preservation.relationshipSubType/collection_PREMIS,
+   :madsrdf/isMemberOfMADSScheme [:loc.vocabulary/preservation
+                                  :loc.preservation/relationshipSubType],
+   :rdf/type :madsrdf/Authority,
+   :rdfs/subPropertyOf :premis/relationship,
+   :skos/broader :loc.preservation.relationshipType/ref,
+   :skos/changeNote
+   [{:cs/changeReason    "new",
+     :cs/createdDate     #inst "2016-03-15T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.relationshipSubType/dlc,
+     :cs/subjectOfChange :loc.preservation.relationshipSubType/doc,
+     :rdf/type           :cs/ChangeSet}
+    {:cs/changeReason    "modified",
+     :cs/createdDate     #inst "2018-09-24T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.relationshipSubType/dlc,
+     :cs/subjectOfChange :loc.preservation.relationshipSubType/doc,
+     :rdf/type           :cs/ChangeSet}],
+   :skos/definition
+   {:rdf/language "en",
+    :rdf/value
+    "A relationship between information about an environment object and the environment object itself. For instance, a user manual has a \"documents\" relationship to the Open Office software application. Has a reciprocal relationship of isDocumentedIn."},
+   :skos/inScheme [:loc.preservation/relationshipSubType
+                   :loc.vocabulary/preservation],
+   :skos/notation "doc",
+   :skos/prefLabel "documents"})
 
 (def dpe
-  "deploys"
+  "A relationship between an environment object that is run on another environment object, e.g an operating system that runs a piece of software. Has a reciprocal relationship with isDeployedOn."
   {:db/ident :loc.preservation.relationshipSubType/dpe,
+   :madsrdf/adminMetadata
+   [{:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2018-09-24T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.relationshipSubType/dlc,
+     :ri/recordStatus "modified"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2016-03-15T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.relationshipSubType/dlc,
+     :ri/recordStatus "new"}],
    :madsrdf/authoritativeLabel "deploys",
-   :rdf/type :madsrdf/Authority})
+   :madsrdf/code "dpe",
+   :madsrdf/definitionNote
+   {:rdf/language "en",
+    :rdf/value
+    "A relationship between an environment object that is run on another environment object, e.g an operating system that runs a piece of software. Has a reciprocal relationship with isDeployedOn."},
+   :madsrdf/hasBroaderAuthority :loc.preservation.relationshipType/dep,
+   :madsrdf/isMemberOfMADSCollection
+   :loc.preservation.relationshipSubType/collection_PREMIS,
+   :madsrdf/isMemberOfMADSScheme [:loc.preservation/relationshipSubType
+                                  :loc.vocabulary/preservation],
+   :rdf/type :madsrdf/Authority,
+   :rdfs/subPropertyOf :premis/relationship,
+   :skos/broader :loc.preservation.relationshipType/dep,
+   :skos/changeNote
+   [{:cs/changeReason    "new",
+     :cs/createdDate     #inst "2016-03-15T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.relationshipSubType/dlc,
+     :cs/subjectOfChange :loc.preservation.relationshipSubType/dpe,
+     :rdf/type           :cs/ChangeSet}
+    {:cs/changeReason    "modified",
+     :cs/createdDate     #inst "2018-09-24T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.relationshipSubType/dlc,
+     :cs/subjectOfChange :loc.preservation.relationshipSubType/dpe,
+     :rdf/type           :cs/ChangeSet}],
+   :skos/definition
+   {:rdf/language "en",
+    :rdf/value
+    "A relationship between an environment object that is run on another environment object, e.g an operating system that runs a piece of software. Has a reciprocal relationship with isDeployedOn."},
+   :skos/inScheme [:loc.preservation/relationshipSubType
+                   :loc.vocabulary/preservation],
+   :skos/notation "dpe",
+   :skos/prefLabel "deploys"})
 
 (def emu
-  "emulates"
+  "A relationship between an environment object and another where the described environment is used to emulate another. For instance the environment \"QEMU version 1.2\" emulates \"IBM x86 PC\". Has a reciprocal relationship of isEmulatedBy."
   {:db/ident :loc.preservation.relationshipSubType/emu,
+   :madsrdf/adminMetadata
+   [{:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2018-09-24T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.relationshipSubType/dlc,
+     :ri/recordStatus "modified"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2016-03-15T04:00:02.000-00:00",
+     :ri/recordContentSource :loc.preservation.relationshipSubType/dlc,
+     :ri/recordStatus "new"}],
    :madsrdf/authoritativeLabel "emulates",
-   :rdf/type :madsrdf/Authority})
+   :madsrdf/code "emu",
+   :madsrdf/definitionNote
+   {:rdf/language "en",
+    :rdf/value
+    "A relationship between an environment object and another where the described environment is used to emulate another. For instance the environment \"QEMU version 1.2\" emulates \"IBM x86 PC\". Has a reciprocal relationship of isEmulatedBy."},
+   :madsrdf/hasBroaderAuthority :loc.preservation.relationshipType/rep,
+   :madsrdf/isMemberOfMADSCollection
+   :loc.preservation.relationshipSubType/collection_PREMIS,
+   :madsrdf/isMemberOfMADSScheme [:loc.vocabulary/preservation
+                                  :loc.preservation/relationshipSubType],
+   :rdf/type :madsrdf/Authority,
+   :rdfs/subPropertyOf :premis/relationship,
+   :skos/broader :loc.preservation.relationshipType/rep,
+   :skos/changeNote
+   [{:cs/changeReason    "new",
+     :cs/createdDate     #inst "2016-03-15T04:00:02.000-00:00",
+     :cs/creatorName     :loc.preservation.relationshipSubType/dlc,
+     :cs/subjectOfChange :loc.preservation.relationshipSubType/emu,
+     :rdf/type           :cs/ChangeSet}
+    {:cs/changeReason    "modified",
+     :cs/createdDate     #inst "2018-09-24T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.relationshipSubType/dlc,
+     :cs/subjectOfChange :loc.preservation.relationshipSubType/emu,
+     :rdf/type           :cs/ChangeSet}],
+   :skos/definition
+   {:rdf/language "en",
+    :rdf/value
+    "A relationship between an environment object and another where the described environment is used to emulate another. For instance the environment \"QEMU version 1.2\" emulates \"IBM x86 PC\". Has a reciprocal relationship of isEmulatedBy."},
+   :skos/inScheme [:loc.vocabulary/preservation
+                   :loc.preservation/relationshipSubType],
+   :skos/notation "emu",
+   :skos/prefLabel "emulates"})
 
 (def enf
-  "encrypted from"
+  "A relationship between an object and another object from which it was derived that is encoded it in a way that it is in an unrecognizable (encrypted) form. Has a reciprocal relationship of encryptedTo."
   {:db/ident :loc.preservation.relationshipSubType/enf,
+   :madsrdf/adminMetadata
+   {:rdf/type :ri/RecordInfo,
+    :ri/recordChangeDate #inst "2012-08-01T04:00:01.000-00:00",
+    :ri/recordContentSource :loc.preservation.relationshipSubType/dlc,
+    :ri/recordStatus "new"},
    :madsrdf/authoritativeLabel "encrypted from",
-   :rdf/type :madsrdf/Authority})
+   :madsrdf/code "enf",
+   :madsrdf/definitionNote
+   {:rdf/language "en",
+    :rdf/value
+    "A relationship between an object and another object from which it was derived that is encoded it in a way that it is in an unrecognizable (encrypted) form. Has a reciprocal relationship of encryptedTo."},
+   :madsrdf/hasBroaderAuthority :loc.preservation.relationshipType/der,
+   :madsrdf/isMemberOfMADSCollection
+   :loc.preservation.relationshipSubType/collection_PREMIS,
+   :madsrdf/isMemberOfMADSScheme [:loc.preservation/relationshipSubType
+                                  :loc.vocabulary/preservation],
+   :rdf/type :madsrdf/Authority,
+   :rdfs/subPropertyOf :premis/relationship,
+   :skos/broader :loc.preservation.relationshipType/der,
+   :skos/changeNote {:cs/changeReason "new",
+                     :cs/createdDate #inst "2012-08-01T04:00:01.000-00:00",
+                     :cs/creatorName :loc.preservation.relationshipSubType/dlc,
+                     :cs/subjectOfChange
+                     :loc.preservation.relationshipSubType/enf,
+                     :rdf/type :cs/ChangeSet},
+   :skos/definition
+   {:rdf/language "en",
+    :rdf/value
+    "A relationship between an object and another object from which it was derived that is encoded it in a way that it is in an unrecognizable (encrypted) form. Has a reciprocal relationship of encryptedTo."},
+   :skos/inScheme [:loc.preservation/relationshipSubType
+                   :loc.vocabulary/preservation],
+   :skos/notation "enf",
+   :skos/prefLabel "encrypted from"})
 
 (def ent
-  "encrypted to"
+  "A relationship between an object and another object in an encrypted form, which is encoded it in a way that it is in an unrecognizable form. Has a reciprocal relationship of encryptedFrom."
   {:db/ident :loc.preservation.relationshipSubType/ent,
+   :madsrdf/adminMetadata
+   {:rdf/type :ri/RecordInfo,
+    :ri/recordChangeDate #inst "2012-08-01T04:00:01.000-00:00",
+    :ri/recordContentSource :loc.preservation.relationshipSubType/dlc,
+    :ri/recordStatus "new"},
    :madsrdf/authoritativeLabel "encrypted to",
-   :rdf/type :madsrdf/Authority})
+   :madsrdf/code "ent",
+   :madsrdf/definitionNote
+   {:rdf/language "en",
+    :rdf/value
+    "A relationship between an object and another object in an encrypted form, which is encoded it in a way that it is in an unrecognizable form. Has a reciprocal relationship of encryptedFrom."},
+   :madsrdf/hasBroaderAuthority :loc.preservation.relationshipType/der,
+   :madsrdf/isMemberOfMADSCollection
+   :loc.preservation.relationshipSubType/collection_PREMIS,
+   :madsrdf/isMemberOfMADSScheme [:loc.preservation/relationshipSubType
+                                  :loc.vocabulary/preservation],
+   :rdf/type :madsrdf/Authority,
+   :rdfs/subPropertyOf :premis/relationship,
+   :skos/broader :loc.preservation.relationshipType/der,
+   :skos/changeNote {:cs/changeReason "new",
+                     :cs/createdDate #inst "2012-08-01T04:00:01.000-00:00",
+                     :cs/creatorName :loc.preservation.relationshipSubType/dlc,
+                     :cs/subjectOfChange
+                     :loc.preservation.relationshipSubType/ent,
+                     :rdf/type :cs/ChangeSet},
+   :skos/definition
+   {:rdf/language "en",
+    :rdf/value
+    "A relationship between an object and another object in an encrypted form, which is encoded it in a way that it is in an unrecognizable form. Has a reciprocal relationship of encryptedFrom."},
+   :skos/inScheme [:loc.preservation/relationshipSubType
+                   :loc.vocabulary/preservation],
+   :skos/notation "ent",
+   :skos/prefLabel "encrypted to"})
 
 (def gen
-  "generalizes"
+  "A relationship between an environment object and another where the described object is a more general description than the more specific related environment. Has a reciprocal relationship of specializes."
   {:db/ident :loc.preservation.relationshipSubType/gen,
+   :madsrdf/adminMetadata
+   [{:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2018-09-24T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.relationshipSubType/dlc,
+     :ri/recordStatus "modified"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2016-03-15T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.relationshipSubType/dlc,
+     :ri/recordStatus "new"}],
    :madsrdf/authoritativeLabel "generalizes",
-   :rdf/type :madsrdf/Authority})
+   :madsrdf/code "gen",
+   :madsrdf/definitionNote
+   {:rdf/language "en",
+    :rdf/value
+    "A relationship between an environment object and another where the described object is a more general description than the more specific related environment. Has a reciprocal relationship of specializes."},
+   :madsrdf/hasBroaderAuthority :loc.preservation.relationshipType/log,
+   :madsrdf/isMemberOfMADSCollection
+   :loc.preservation.relationshipSubType/collection_PREMIS,
+   :madsrdf/isMemberOfMADSScheme [:loc.vocabulary/preservation
+                                  :loc.preservation/relationshipSubType],
+   :rdf/type :madsrdf/Authority,
+   :rdfs/subPropertyOf :premis/relationship,
+   :skos/broader :loc.preservation.relationshipType/log,
+   :skos/changeNote
+   [{:cs/changeReason    "modified",
+     :cs/createdDate     #inst "2018-09-24T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.relationshipSubType/dlc,
+     :cs/subjectOfChange :loc.preservation.relationshipSubType/gen,
+     :rdf/type           :cs/ChangeSet}
+    {:cs/changeReason    "new",
+     :cs/createdDate     #inst "2016-03-15T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.relationshipSubType/dlc,
+     :cs/subjectOfChange :loc.preservation.relationshipSubType/gen,
+     :rdf/type           :cs/ChangeSet}],
+   :skos/definition
+   {:rdf/language "en",
+    :rdf/value
+    "A relationship between an environment object and another where the described object is a more general description than the more specific related environment. Has a reciprocal relationship of specializes."},
+   :skos/inScheme [:loc.preservation/relationshipSubType
+                   :loc.vocabulary/preservation],
+   :skos/notation "gen",
+   :skos/prefLabel "generalizes"})
 
 (def hsi
-  "has Sibling"
+  "The object shares a common parent with the related object. For example, a word-processing document could have been used to create derivative files in PDF and XML formats; these objects are different representations of the same Intellectual Entity with parent-child relationships to the source word-processing file. The PDF and XML have a sibling relationship."
   {:db/ident :loc.preservation.relationshipSubType/hsi,
+   :madsrdf/adminMetadata
+   [{:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2016-03-15T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.relationshipSubType/dlc,
+     :ri/recordStatus "modified"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2018-09-24T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.relationshipSubType/dlc,
+     :ri/recordStatus "modified"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2012-08-01T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.relationshipSubType/dlc,
+     :ri/recordStatus "new"}],
    :madsrdf/authoritativeLabel "has Sibling",
-   :rdf/type :madsrdf/Authority})
+   :madsrdf/code "hsi",
+   :madsrdf/definitionNote
+   {:rdf/language "en",
+    :rdf/value
+    "The object shares a common parent with the related object. For example, a word-processing document could have been used to create derivative files in PDF and XML formats; these objects are different representations of the same Intellectual Entity with parent-child relationships to the source word-processing file. The PDF and XML have a sibling relationship."},
+   :madsrdf/hasBroaderAuthority :loc.preservation.relationshipType/str,
+   :madsrdf/isMemberOfMADSCollection
+   :loc.preservation.relationshipSubType/collection_PREMIS,
+   :madsrdf/isMemberOfMADSScheme [:loc.preservation/relationshipSubType
+                                  :loc.vocabulary/preservation],
+   :rdf/type :madsrdf/Authority,
+   :rdfs/subPropertyOf :premis/relationship,
+   :skos/broader :loc.preservation.relationshipType/str,
+   :skos/changeNote
+   [{:cs/changeReason    "modified",
+     :cs/createdDate     #inst "2016-03-15T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.relationshipSubType/dlc,
+     :cs/subjectOfChange :loc.preservation.relationshipSubType/hsi,
+     :rdf/type           :cs/ChangeSet}
+    {:cs/changeReason    "new",
+     :cs/createdDate     #inst "2012-08-01T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.relationshipSubType/dlc,
+     :cs/subjectOfChange :loc.preservation.relationshipSubType/hsi,
+     :rdf/type           :cs/ChangeSet}
+    {:cs/changeReason    "modified",
+     :cs/createdDate     #inst "2018-09-24T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.relationshipSubType/dlc,
+     :cs/subjectOfChange :loc.preservation.relationshipSubType/hsi,
+     :rdf/type           :cs/ChangeSet}],
+   :skos/definition
+   {:rdf/language "en",
+    :rdf/value
+    "The object shares a common parent with the related object. For example, a word-processing document could have been used to create derivative files in PDF and XML formats; these objects are different representations of the same Intellectual Entity with parent-child relationships to the source word-processing file. The PDF and XML have a sibling relationship."},
+   :skos/inScheme [:loc.vocabulary/preservation
+                   :loc.preservation/relationshipSubType],
+   :skos/notation "hsi",
+   :skos/prefLabel "has Sibling"})
 
 (def hsp
-  "has Part"
+  "The object contains the related object when these are the same object category. For instance, a larger Intellectual Entity has another Intellectual Entity as a part, or a compound file (e.g. archive.tar) contains another file (e.g. text.xml). Has the reciprocal relationship of isPartOf."
   {:db/ident :loc.preservation.relationshipSubType/hsp,
+   :madsrdf/adminMetadata
+   [{:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2016-03-15T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.relationshipSubType/dlc,
+     :ri/recordStatus "modified"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2018-09-24T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.relationshipSubType/dlc,
+     :ri/recordStatus "modified"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2012-08-01T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.relationshipSubType/dlc,
+     :ri/recordStatus "new"}],
    :madsrdf/authoritativeLabel "has Part",
-   :rdf/type :madsrdf/Authority})
+   :madsrdf/code "hsp",
+   :madsrdf/definitionNote
+   {:rdf/language "en",
+    :rdf/value
+    "The object contains the related object when these are the same object category. For instance, a larger Intellectual Entity has another Intellectual Entity as a part, or a compound file (e.g. archive.tar) contains another file (e.g. text.xml). Has the reciprocal relationship of isPartOf."},
+   :madsrdf/hasBroaderAuthority :loc.preservation.relationshipType/str,
+   :madsrdf/isMemberOfMADSCollection
+   :loc.preservation.relationshipSubType/collection_PREMIS,
+   :madsrdf/isMemberOfMADSScheme [:loc.preservation/relationshipSubType
+                                  :loc.vocabulary/preservation],
+   :rdf/type :madsrdf/Authority,
+   :rdfs/subPropertyOf :premis/relationship,
+   :skos/broader :loc.preservation.relationshipType/str,
+   :skos/changeNote
+   [{:cs/changeReason    "modified",
+     :cs/createdDate     #inst "2018-09-24T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.relationshipSubType/dlc,
+     :cs/subjectOfChange :loc.preservation.relationshipSubType/hsp,
+     :rdf/type           :cs/ChangeSet}
+    {:cs/changeReason    "modified",
+     :cs/createdDate     #inst "2016-03-15T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.relationshipSubType/dlc,
+     :cs/subjectOfChange :loc.preservation.relationshipSubType/hsp,
+     :rdf/type           :cs/ChangeSet}
+    {:cs/changeReason    "new",
+     :cs/createdDate     #inst "2012-08-01T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.relationshipSubType/dlc,
+     :cs/subjectOfChange :loc.preservation.relationshipSubType/hsp,
+     :rdf/type           :cs/ChangeSet}],
+   :skos/definition
+   {:rdf/language "en",
+    :rdf/value
+    "The object contains the related object when these are the same object category. For instance, a larger Intellectual Entity has another Intellectual Entity as a part, or a compound file (e.g. archive.tar) contains another file (e.g. text.xml). Has the reciprocal relationship of isPartOf."},
+   :skos/inScheme [:loc.vocabulary/preservation
+                   :loc.preservation/relationshipSubType],
+   :skos/notation "hsp",
+   :skos/prefLabel "has Part"})
 
 (def hsr
-  "has Root"
+  "For a representation only, the related object is the file that must be processed first in order to render the representation. It implies that a compound object (i.e. one made up of multiple files) requires that one file be picked up first as its root to render it."
   {:db/ident :loc.preservation.relationshipSubType/hsr,
+   :madsrdf/adminMetadata
+   [{:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2016-03-15T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.relationshipSubType/dlc,
+     :ri/recordStatus "modified"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2012-08-01T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.relationshipSubType/dlc,
+     :ri/recordStatus "new"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2018-09-24T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.relationshipSubType/dlc,
+     :ri/recordStatus "modified"}],
    :madsrdf/authoritativeLabel "has Root",
-   :rdf/type :madsrdf/Authority})
+   :madsrdf/code "hsr",
+   :madsrdf/definitionNote
+   {:rdf/language "en",
+    :rdf/value
+    "For a representation only, the related object is the file that must be processed first in order to render the representation. It implies that a compound object (i.e. one made up of multiple files) requires that one file be picked up first as its root to render it."},
+   :madsrdf/hasBroaderAuthority :loc.preservation.relationshipType/str,
+   :madsrdf/isMemberOfMADSCollection
+   :loc.preservation.relationshipSubType/collection_PREMIS,
+   :madsrdf/isMemberOfMADSScheme [:loc.vocabulary/preservation
+                                  :loc.preservation/relationshipSubType],
+   :rdf/type :madsrdf/Authority,
+   :rdfs/subPropertyOf :premis/relationship,
+   :skos/broader :loc.preservation.relationshipType/str,
+   :skos/changeNote
+   [{:cs/changeReason    "modified",
+     :cs/createdDate     #inst "2018-09-24T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.relationshipSubType/dlc,
+     :cs/subjectOfChange :loc.preservation.relationshipSubType/hsr,
+     :rdf/type           :cs/ChangeSet}
+    {:cs/changeReason    "modified",
+     :cs/createdDate     #inst "2016-03-15T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.relationshipSubType/dlc,
+     :cs/subjectOfChange :loc.preservation.relationshipSubType/hsr,
+     :rdf/type           :cs/ChangeSet}
+    {:cs/changeReason    "new",
+     :cs/createdDate     #inst "2012-08-01T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.relationshipSubType/dlc,
+     :cs/subjectOfChange :loc.preservation.relationshipSubType/hsr,
+     :rdf/type           :cs/ChangeSet}],
+   :skos/definition
+   {:rdf/language "en",
+    :rdf/value
+    "For a representation only, the related object is the file that must be processed first in order to render the representation. It implies that a compound object (i.e. one made up of multiple files) requires that one file be picked up first as its root to render it."},
+   :skos/inScheme [:loc.vocabulary/preservation
+                   :loc.preservation/relationshipSubType],
+   :skos/notation "hsr",
+   :skos/prefLabel "has Root"})
 
 (def hss
-  "has Source"
+  "A relationship in which the object is derived from the related object as a result of a transformation. For instance, an HTML file that is the product of a migration from a file encoded in the WordStar format has that Wordstar file as its source. Also applies to the relationship between the original and a disk image. Has a reciprocal relationship of isSourceOf."
   {:db/ident :loc.preservation.relationshipSubType/hss,
+   :madsrdf/adminMetadata
+   [{:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2012-08-01T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.relationshipSubType/dlc,
+     :ri/recordStatus "new"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2016-03-15T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.relationshipSubType/dlc,
+     :ri/recordStatus "modified"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2018-09-24T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.relationshipSubType/dlc,
+     :ri/recordStatus "modified"}],
    :madsrdf/authoritativeLabel "has Source",
-   :rdf/type :madsrdf/Authority})
+   :madsrdf/code "hss",
+   :madsrdf/definitionNote
+   {:rdf/language "en",
+    :rdf/value
+    "A relationship in which the object is derived from the related object as a result of a transformation. For instance, an HTML file that is the product of a migration from a file encoded in the WordStar format has that Wordstar file as its source. Also applies to the relationship between the original and a disk image. Has a reciprocal relationship of isSourceOf."},
+   :madsrdf/hasBroaderAuthority :loc.preservation.relationshipType/der,
+   :madsrdf/isMemberOfMADSCollection
+   :loc.preservation.relationshipSubType/collection_PREMIS,
+   :madsrdf/isMemberOfMADSScheme [:loc.vocabulary/preservation
+                                  :loc.preservation/relationshipSubType],
+   :rdf/type :madsrdf/Authority,
+   :rdfs/subPropertyOf :premis/relationship,
+   :skos/broader :loc.preservation.relationshipType/der,
+   :skos/changeNote
+   [{:cs/changeReason    "modified",
+     :cs/createdDate     #inst "2018-09-24T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.relationshipSubType/dlc,
+     :cs/subjectOfChange :loc.preservation.relationshipSubType/hss,
+     :rdf/type           :cs/ChangeSet}
+    {:cs/changeReason    "new",
+     :cs/createdDate     #inst "2012-08-01T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.relationshipSubType/dlc,
+     :cs/subjectOfChange :loc.preservation.relationshipSubType/hss,
+     :rdf/type           :cs/ChangeSet}
+    {:cs/changeReason    "modified",
+     :cs/createdDate     #inst "2016-03-15T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.relationshipSubType/dlc,
+     :cs/subjectOfChange :loc.preservation.relationshipSubType/hss,
+     :rdf/type           :cs/ChangeSet}],
+   :skos/definition
+   {:rdf/language "en",
+    :rdf/value
+    "A relationship in which the object is derived from the related object as a result of a transformation. For instance, an HTML file that is the product of a migration from a file encoded in the WordStar format has that Wordstar file as its source. Also applies to the relationship between the original and a disk image. Has a reciprocal relationship of isSourceOf."},
+   :skos/inScheme [:loc.vocabulary/preservation
+                   :loc.preservation/relationshipSubType],
+   :skos/notation "hss",
+   :skos/prefLabel "has Source"})
 
 (def icw
-  "is Compatible With"
+  "A relationship between an environment object and another where the described object is compatible with another environment. An environment may be deployed on another environment but it may also be compatible with other environments."
   {:db/ident :loc.preservation.relationshipSubType/icw,
+   :madsrdf/adminMetadata
+   [{:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2018-09-24T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.relationshipSubType/dlc,
+     :ri/recordStatus "modified"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2016-03-15T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.relationshipSubType/dlc,
+     :ri/recordStatus "new"}],
    :madsrdf/authoritativeLabel "is Compatible With",
-   :rdf/type :madsrdf/Authority})
+   :madsrdf/code "icw",
+   :madsrdf/definitionNote
+   {:rdf/language "en",
+    :rdf/value
+    "A relationship between an environment object and another where the described object is compatible with another environment. An environment may be deployed on another environment but it may also be compatible with other environments."},
+   :madsrdf/hasBroaderAuthority :loc.preservation.relationshipType/dep,
+   :madsrdf/isMemberOfMADSCollection
+   :loc.preservation.relationshipSubType/collection_PREMIS,
+   :madsrdf/isMemberOfMADSScheme [:loc.preservation/relationshipSubType
+                                  :loc.vocabulary/preservation],
+   :rdf/type :madsrdf/Authority,
+   :rdfs/subPropertyOf :premis/relationship,
+   :skos/broader :loc.preservation.relationshipType/dep,
+   :skos/changeNote
+   [{:cs/changeReason    "modified",
+     :cs/createdDate     #inst "2018-09-24T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.relationshipSubType/dlc,
+     :cs/subjectOfChange :loc.preservation.relationshipSubType/icw,
+     :rdf/type           :cs/ChangeSet}
+    {:cs/changeReason    "new",
+     :cs/createdDate     #inst "2016-03-15T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.relationshipSubType/dlc,
+     :cs/subjectOfChange :loc.preservation.relationshipSubType/icw,
+     :rdf/type           :cs/ChangeSet}],
+   :skos/definition
+   {:rdf/language "en",
+    :rdf/value
+    "A relationship between an environment object and another where the described object is compatible with another environment. An environment may be deployed on another environment but it may also be compatible with other environments."},
+   :skos/inScheme [:loc.vocabulary/preservation
+                   :loc.preservation/relationshipSubType],
+   :skos/notation "icw",
+   :skos/prefLabel "is Compatible With"})
 
 (def idc
-  "is Documented In"
+  "A relationship between an environment object and the information that documents it. Has a reciprocal relationship with documents."
   {:db/ident :loc.preservation.relationshipSubType/idc,
+   :madsrdf/adminMetadata
+   [{:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2016-03-15T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.relationshipSubType/dlc,
+     :ri/recordStatus "new"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2018-09-24T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.relationshipSubType/dlc,
+     :ri/recordStatus "modified"}],
    :madsrdf/authoritativeLabel "is Documented In",
-   :rdf/type :madsrdf/Authority})
+   :madsrdf/code "idc",
+   :madsrdf/definitionNote
+   {:rdf/language "en",
+    :rdf/value
+    "A relationship between an environment object and the information that documents it. Has a reciprocal relationship with documents."},
+   :madsrdf/hasBroaderAuthority :loc.preservation.relationshipType/ref,
+   :madsrdf/isMemberOfMADSCollection
+   :loc.preservation.relationshipSubType/collection_PREMIS,
+   :madsrdf/isMemberOfMADSScheme [:loc.preservation/relationshipSubType
+                                  :loc.vocabulary/preservation],
+   :rdf/type :madsrdf/Authority,
+   :rdfs/subPropertyOf :premis/relationship,
+   :skos/broader :loc.preservation.relationshipType/ref,
+   :skos/changeNote
+   [{:cs/changeReason    "new",
+     :cs/createdDate     #inst "2016-03-15T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.relationshipSubType/dlc,
+     :cs/subjectOfChange :loc.preservation.relationshipSubType/idc,
+     :rdf/type           :cs/ChangeSet}
+    {:cs/changeReason    "modified",
+     :cs/createdDate     #inst "2018-09-24T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.relationshipSubType/dlc,
+     :cs/subjectOfChange :loc.preservation.relationshipSubType/idc,
+     :rdf/type           :cs/ChangeSet}],
+   :skos/definition
+   {:rdf/language "en",
+    :rdf/value
+    "A relationship between an environment object and the information that documents it. Has a reciprocal relationship with documents."},
+   :skos/inScheme [:loc.vocabulary/preservation
+                   :loc.preservation/relationshipSubType],
+   :skos/notation "idc",
+   :skos/prefLabel "is Documented In"})
 
 (def idp
-  "is Deployed On"
+  "A relationship between an environment object that runs on another environment object, e.g. a piece of software running on an operating system. Has a reciprocal relationship of deploys."
   {:db/ident :loc.preservation.relationshipSubType/idp,
+   :madsrdf/adminMetadata
+   [{:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2018-09-24T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.relationshipSubType/dlc,
+     :ri/recordStatus "modified"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2016-03-15T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.relationshipSubType/dlc,
+     :ri/recordStatus "new"}],
    :madsrdf/authoritativeLabel "is Deployed On",
-   :rdf/type :madsrdf/Authority})
+   :madsrdf/code "idp",
+   :madsrdf/definitionNote
+   {:rdf/language "en",
+    :rdf/value
+    "A relationship between an environment object that runs on another environment object, e.g. a piece of software running on an operating system. Has a reciprocal relationship of deploys."},
+   :madsrdf/hasBroaderAuthority :loc.preservation.relationshipType/dep,
+   :madsrdf/isMemberOfMADSCollection
+   :loc.preservation.relationshipSubType/collection_PREMIS,
+   :madsrdf/isMemberOfMADSScheme [:loc.vocabulary/preservation
+                                  :loc.preservation/relationshipSubType],
+   :rdf/type :madsrdf/Authority,
+   :rdfs/subPropertyOf :premis/relationship,
+   :skos/broader :loc.preservation.relationshipType/dep,
+   :skos/changeNote
+   [{:cs/changeReason    "new",
+     :cs/createdDate     #inst "2016-03-15T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.relationshipSubType/dlc,
+     :cs/subjectOfChange :loc.preservation.relationshipSubType/idp,
+     :rdf/type           :cs/ChangeSet}
+    {:cs/changeReason    "modified",
+     :cs/createdDate     #inst "2018-09-24T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.relationshipSubType/dlc,
+     :cs/subjectOfChange :loc.preservation.relationshipSubType/idp,
+     :rdf/type           :cs/ChangeSet}],
+   :skos/definition
+   {:rdf/language "en",
+    :rdf/value
+    "A relationship between an environment object that runs on another environment object, e.g. a piece of software running on an operating system. Has a reciprocal relationship of deploys."},
+   :skos/inScheme [:loc.vocabulary/preservation
+                   :loc.preservation/relationshipSubType],
+   :skos/notation "idp",
+   :skos/prefLabel "is Deployed On"})
 
 (def iem
-  "is Emulated By"
+  "A relationship between an environment object and another where the described environment is emulated by another. For instance the environment \"IBM x 86 PC\" is emulated by the environment \"QEMU version 1.2\". Has a reciprocal relationship of emulates."
   {:db/ident :loc.preservation.relationshipSubType/iem,
+   :madsrdf/adminMetadata
+   [{:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2018-09-24T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.relationshipSubType/dlc,
+     :ri/recordStatus "modified"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2016-03-15T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.relationshipSubType/dlc,
+     :ri/recordStatus "new"}],
    :madsrdf/authoritativeLabel "is Emulated By",
-   :rdf/type :madsrdf/Authority})
+   :madsrdf/code "iem",
+   :madsrdf/definitionNote
+   {:rdf/language "en",
+    :rdf/value
+    "A relationship between an environment object and another where the described environment is emulated by another. For instance the environment \"IBM x 86 PC\" is emulated by the environment \"QEMU version 1.2\". Has a reciprocal relationship of emulates."},
+   :madsrdf/hasBroaderAuthority :loc.preservation.relationshipType/rep,
+   :madsrdf/isMemberOfMADSCollection
+   :loc.preservation.relationshipSubType/collection_PREMIS,
+   :madsrdf/isMemberOfMADSScheme [:loc.preservation/relationshipSubType
+                                  :loc.vocabulary/preservation],
+   :rdf/type :madsrdf/Authority,
+   :rdfs/subPropertyOf :premis/relationship,
+   :skos/broader :loc.preservation.relationshipType/rep,
+   :skos/changeNote
+   [{:cs/changeReason    "modified",
+     :cs/createdDate     #inst "2018-09-24T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.relationshipSubType/dlc,
+     :cs/subjectOfChange :loc.preservation.relationshipSubType/iem,
+     :rdf/type           :cs/ChangeSet}
+    {:cs/changeReason    "new",
+     :cs/createdDate     #inst "2016-03-15T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.relationshipSubType/dlc,
+     :cs/subjectOfChange :loc.preservation.relationshipSubType/iem,
+     :rdf/type           :cs/ChangeSet}],
+   :skos/definition
+   {:rdf/language "en",
+    :rdf/value
+    "A relationship between an environment object and another where the described environment is emulated by another. For instance the environment \"IBM x 86 PC\" is emulated by the environment \"QEMU version 1.2\". Has a reciprocal relationship of emulates."},
+   :skos/inScheme [:loc.preservation/relationshipSubType
+                   :loc.vocabulary/preservation],
+   :skos/notation "iem",
+   :skos/prefLabel "is Emulated By"})
 
 (def inc
-  "includes"
+  "A relationship in which the described object includes the referenced object, when objects have different object categories. For instance, a representation includes files. Has a reciprocal relationship of isIncludedIn."
   {:db/ident :loc.preservation.relationshipSubType/inc,
+   :madsrdf/adminMetadata
+   [{:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2018-09-24T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.relationshipSubType/dlc,
+     :ri/recordStatus "modified"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2012-08-01T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.relationshipSubType/dlc,
+     :ri/recordStatus "new"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2016-03-15T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.relationshipSubType/dlc,
+     :ri/recordStatus "modified"}],
    :madsrdf/authoritativeLabel "includes",
-   :rdf/type :madsrdf/Authority})
+   :madsrdf/code "inc",
+   :madsrdf/definitionNote
+   {:rdf/language "en",
+    :rdf/value
+    "A relationship in which the described object includes the referenced object, when objects have different object categories. For instance, a representation includes files. Has a reciprocal relationship of isIncludedIn."},
+   :madsrdf/hasBroaderAuthority :loc.preservation.relationshipType/str,
+   :madsrdf/isMemberOfMADSCollection
+   :loc.preservation.relationshipSubType/collection_PREMIS,
+   :madsrdf/isMemberOfMADSScheme [:loc.vocabulary/preservation
+                                  :loc.preservation/relationshipSubType],
+   :rdf/type :madsrdf/Authority,
+   :rdfs/subPropertyOf :premis/relationship,
+   :skos/broader :loc.preservation.relationshipType/str,
+   :skos/changeNote
+   [{:cs/changeReason    "modified",
+     :cs/createdDate     #inst "2016-03-15T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.relationshipSubType/dlc,
+     :cs/subjectOfChange :loc.preservation.relationshipSubType/inc,
+     :rdf/type           :cs/ChangeSet}
+    {:cs/changeReason    "new",
+     :cs/createdDate     #inst "2012-08-01T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.relationshipSubType/dlc,
+     :cs/subjectOfChange :loc.preservation.relationshipSubType/inc,
+     :rdf/type           :cs/ChangeSet}
+    {:cs/changeReason    "modified",
+     :cs/createdDate     #inst "2018-09-24T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.relationshipSubType/dlc,
+     :cs/subjectOfChange :loc.preservation.relationshipSubType/inc,
+     :rdf/type           :cs/ChangeSet}],
+   :skos/definition
+   {:rdf/language "en",
+    :rdf/value
+    "A relationship in which the described object includes the referenced object, when objects have different object categories. For instance, a representation includes files. Has a reciprocal relationship of isIncludedIn."},
+   :skos/inScheme [:loc.vocabulary/preservation
+                   :loc.preservation/relationshipSubType],
+   :skos/notation "inc",
+   :skos/prefLabel "includes"})
 
 (def irq
-  "is Required By"
+  "The relationship of an environment object to a file or representation, where the environment is required by the other objects to render or run. Has a reciprocal relationship of isRequiredBy."
   {:db/ident :loc.preservation.relationshipSubType/irq,
+   :madsrdf/adminMetadata
+   [{:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2016-03-15T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.relationshipSubType/dlc,
+     :ri/recordStatus "new"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2018-09-24T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.relationshipSubType/dlc,
+     :ri/recordStatus "modified"}],
    :madsrdf/authoritativeLabel "is Required By",
-   :rdf/type :madsrdf/Authority})
+   :madsrdf/code "irq",
+   :madsrdf/definitionNote
+   {:rdf/language "en",
+    :rdf/value
+    "The relationship of an environment object to a file or representation, where the environment is required by the other objects to render or run. Has a reciprocal relationship of isRequiredBy."},
+   :madsrdf/hasBroaderAuthority :loc.preservation.relationshipType/dep,
+   :madsrdf/isMemberOfMADSCollection
+   :loc.preservation.relationshipSubType/collection_PREMIS,
+   :madsrdf/isMemberOfMADSScheme [:loc.vocabulary/preservation
+                                  :loc.preservation/relationshipSubType],
+   :rdf/type :madsrdf/Authority,
+   :rdfs/subPropertyOf :premis/relationship,
+   :skos/broader :loc.preservation.relationshipType/dep,
+   :skos/changeNote
+   [{:cs/changeReason    "new",
+     :cs/createdDate     #inst "2016-03-15T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.relationshipSubType/dlc,
+     :cs/subjectOfChange :loc.preservation.relationshipSubType/irq,
+     :rdf/type           :cs/ChangeSet}
+    {:cs/changeReason    "modified",
+     :cs/createdDate     #inst "2018-09-24T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.relationshipSubType/dlc,
+     :cs/subjectOfChange :loc.preservation.relationshipSubType/irq,
+     :rdf/type           :cs/ChangeSet}],
+   :skos/definition
+   {:rdf/language "en",
+    :rdf/value
+    "The relationship of an environment object to a file or representation, where the environment is required by the other objects to render or run. Has a reciprocal relationship of isRequiredBy."},
+   :skos/inScheme [:loc.vocabulary/preservation
+                   :loc.preservation/relationshipSubType],
+   :skos/notation "irq",
+   :skos/prefLabel "is Required By"})
 
 (def isi
-  "is Included In"
+  "A relationship in which the described object is included in the referenced object, when the objects have different object categories, for instance, a bitstream to a file, a file to a representation. Has a reciprocal relationship of includes."
   {:db/ident :loc.preservation.relationshipSubType/isi,
+   :madsrdf/adminMetadata
+   [{:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2016-03-15T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.relationshipSubType/dlc,
+     :ri/recordStatus "modified"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2012-08-01T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.relationshipSubType/dlc,
+     :ri/recordStatus "new"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2018-09-24T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.relationshipSubType/dlc,
+     :ri/recordStatus "modified"}],
    :madsrdf/authoritativeLabel "is Included In",
-   :rdf/type :madsrdf/Authority})
+   :madsrdf/code "isi",
+   :madsrdf/definitionNote
+   {:rdf/language "en",
+    :rdf/value
+    "A relationship in which the described object is included in the referenced object, when the objects have different object categories, for instance, a bitstream to a file, a file to a representation. Has a reciprocal relationship of includes."},
+   :madsrdf/hasBroaderAuthority :loc.preservation.relationshipType/str,
+   :madsrdf/isMemberOfMADSCollection
+   :loc.preservation.relationshipSubType/collection_PREMIS,
+   :madsrdf/isMemberOfMADSScheme [:loc.preservation/relationshipSubType
+                                  :loc.vocabulary/preservation],
+   :rdf/type :madsrdf/Authority,
+   :rdfs/subPropertyOf :premis/relationship,
+   :skos/broader :loc.preservation.relationshipType/str,
+   :skos/changeNote
+   [{:cs/changeReason    "new",
+     :cs/createdDate     #inst "2012-08-01T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.relationshipSubType/dlc,
+     :cs/subjectOfChange :loc.preservation.relationshipSubType/isi,
+     :rdf/type           :cs/ChangeSet}
+    {:cs/changeReason    "modified",
+     :cs/createdDate     #inst "2018-09-24T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.relationshipSubType/dlc,
+     :cs/subjectOfChange :loc.preservation.relationshipSubType/isi,
+     :rdf/type           :cs/ChangeSet}
+    {:cs/changeReason    "modified",
+     :cs/createdDate     #inst "2016-03-15T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.relationshipSubType/dlc,
+     :cs/subjectOfChange :loc.preservation.relationshipSubType/isi,
+     :rdf/type           :cs/ChangeSet}],
+   :skos/definition
+   {:rdf/language "en",
+    :rdf/value
+    "A relationship in which the described object is included in the referenced object, when the objects have different object categories, for instance, a bitstream to a file, a file to a representation. Has a reciprocal relationship of includes."},
+   :skos/inScheme [:loc.preservation/relationshipSubType
+                   :loc.vocabulary/preservation],
+   :skos/notation "isi",
+   :skos/prefLabel "is Included In"})
 
 (def iso
-  "is Source Of"
+  "The related object is a version of the source object created by a transformation. For example, an HTML file that is the product of a migration from a file encoded in the WordStar format, the Wordstar file has a \"isSourceOf\" relationship to the HTML file. Also applies to the relationship between the original and a disk image. Has a reciprocal relationship of hasSource."
   {:db/ident :loc.preservation.relationshipSubType/iso,
+   :madsrdf/adminMetadata
+   [{:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2016-03-15T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.relationshipSubType/dlc,
+     :ri/recordStatus "modified"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2018-09-24T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.relationshipSubType/dlc,
+     :ri/recordStatus "modified"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2012-08-01T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.relationshipSubType/dlc,
+     :ri/recordStatus "new"}],
    :madsrdf/authoritativeLabel "is Source Of",
-   :rdf/type :madsrdf/Authority})
+   :madsrdf/code "iso",
+   :madsrdf/definitionNote
+   {:rdf/language "en",
+    :rdf/value
+    "The related object is a version of the source object created by a transformation. For example, an HTML file that is the product of a migration from a file encoded in the WordStar format, the Wordstar file has a \"isSourceOf\" relationship to the HTML file. Also applies to the relationship between the original and a disk image. Has a reciprocal relationship of hasSource."},
+   :madsrdf/hasBroaderAuthority :loc.preservation.relationshipType/der,
+   :madsrdf/isMemberOfMADSCollection
+   :loc.preservation.relationshipSubType/collection_PREMIS,
+   :madsrdf/isMemberOfMADSScheme [:loc.vocabulary/preservation
+                                  :loc.preservation/relationshipSubType],
+   :rdf/type :madsrdf/Authority,
+   :rdfs/subPropertyOf :premis/relationship,
+   :skos/broader :loc.preservation.relationshipType/der,
+   :skos/changeNote
+   [{:cs/changeReason    "new",
+     :cs/createdDate     #inst "2012-08-01T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.relationshipSubType/dlc,
+     :cs/subjectOfChange :loc.preservation.relationshipSubType/iso,
+     :rdf/type           :cs/ChangeSet}
+    {:cs/changeReason    "modified",
+     :cs/createdDate     #inst "2016-03-15T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.relationshipSubType/dlc,
+     :cs/subjectOfChange :loc.preservation.relationshipSubType/iso,
+     :rdf/type           :cs/ChangeSet}
+    {:cs/changeReason    "modified",
+     :cs/createdDate     #inst "2018-09-24T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.relationshipSubType/dlc,
+     :cs/subjectOfChange :loc.preservation.relationshipSubType/iso,
+     :rdf/type           :cs/ChangeSet}],
+   :skos/definition
+   {:rdf/language "en",
+    :rdf/value
+    "The related object is a version of the source object created by a transformation. For example, an HTML file that is the product of a migration from a file encoded in the WordStar format, the Wordstar file has a \"isSourceOf\" relationship to the HTML file. Also applies to the relationship between the original and a disk image. Has a reciprocal relationship of hasSource."},
+   :skos/inScheme [:loc.vocabulary/preservation
+                   :loc.preservation/relationshipSubType],
+   :skos/notation "iso",
+   :skos/prefLabel "is Source Of"})
 
 (def isp
-  "is Part Of"
+  "A relationship in which the object is contained in the related object when these are the same object category. For instance a Web page intellectual entity is part of a larger Web site intellectual entity. Has a reciprocal relationship of hasPart."
   {:db/ident :loc.preservation.relationshipSubType/isp,
+   :madsrdf/adminMetadata
+   [{:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2018-09-24T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.relationshipSubType/dlc,
+     :ri/recordStatus "modified"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2016-03-15T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.relationshipSubType/dlc,
+     :ri/recordStatus "modified"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2012-08-01T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.relationshipSubType/dlc,
+     :ri/recordStatus "new"}],
    :madsrdf/authoritativeLabel "is Part Of",
-   :rdf/type :madsrdf/Authority})
+   :madsrdf/code "isp",
+   :madsrdf/definitionNote
+   {:rdf/language "en",
+    :rdf/value
+    "A relationship in which the object is contained in the related object when these are the same object category. For instance a Web page intellectual entity is part of a larger Web site intellectual entity. Has a reciprocal relationship of hasPart."},
+   :madsrdf/hasBroaderAuthority :loc.preservation.relationshipType/str,
+   :madsrdf/isMemberOfMADSCollection
+   :loc.preservation.relationshipSubType/collection_PREMIS,
+   :madsrdf/isMemberOfMADSScheme [:loc.vocabulary/preservation
+                                  :loc.preservation/relationshipSubType],
+   :rdf/type :madsrdf/Authority,
+   :rdfs/subPropertyOf :premis/relationship,
+   :skos/broader :loc.preservation.relationshipType/str,
+   :skos/changeNote
+   [{:cs/changeReason    "modified",
+     :cs/createdDate     #inst "2016-03-15T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.relationshipSubType/dlc,
+     :cs/subjectOfChange :loc.preservation.relationshipSubType/isp,
+     :rdf/type           :cs/ChangeSet}
+    {:cs/changeReason    "modified",
+     :cs/createdDate     #inst "2018-09-24T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.relationshipSubType/dlc,
+     :cs/subjectOfChange :loc.preservation.relationshipSubType/isp,
+     :rdf/type           :cs/ChangeSet}
+    {:cs/changeReason    "new",
+     :cs/createdDate     #inst "2012-08-01T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.relationshipSubType/dlc,
+     :cs/subjectOfChange :loc.preservation.relationshipSubType/isp,
+     :rdf/type           :cs/ChangeSet}],
+   :skos/definition
+   {:rdf/language "en",
+    :rdf/value
+    "A relationship in which the object is contained in the related object when these are the same object category. For instance a Web page intellectual entity is part of a larger Web site intellectual entity. Has a reciprocal relationship of hasPart."},
+   :skos/inScheme [:loc.vocabulary/preservation
+                   :loc.preservation/relationshipSubType],
+   :skos/notation "isp",
+   :skos/prefLabel "is Part Of"})
 
 (def isr
-  "is Represented By"
+  "A relationship in which an abstract intellectual entity is represented as a file or representation or a software agent is represented by an environment object. Has a reciprocal relationship of represents."
   {:db/ident :loc.preservation.relationshipSubType/isr,
+   :madsrdf/adminMetadata
+   [{:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2016-03-15T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.relationshipSubType/dlc,
+     :ri/recordStatus "new"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2018-09-24T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.relationshipSubType/dlc,
+     :ri/recordStatus "modified"}],
    :madsrdf/authoritativeLabel "is Represented By",
-   :rdf/type :madsrdf/Authority})
+   :madsrdf/code "isr",
+   :madsrdf/definitionNote
+   {:rdf/language "en",
+    :rdf/value
+    "A relationship in which an abstract intellectual entity is represented as a file or representation or a software agent is represented by an environment object. Has a reciprocal relationship of represents."},
+   :madsrdf/hasBroaderAuthority :loc.preservation.relationshipType/str,
+   :madsrdf/isMemberOfMADSCollection
+   :loc.preservation.relationshipSubType/collection_PREMIS,
+   :madsrdf/isMemberOfMADSScheme [:loc.preservation/relationshipSubType
+                                  :loc.vocabulary/preservation],
+   :rdf/type :madsrdf/Authority,
+   :rdfs/subPropertyOf :premis/relationship,
+   :skos/broader :loc.preservation.relationshipType/str,
+   :skos/changeNote
+   [{:cs/changeReason    "modified",
+     :cs/createdDate     #inst "2018-09-24T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.relationshipSubType/dlc,
+     :cs/subjectOfChange :loc.preservation.relationshipSubType/isr,
+     :rdf/type           :cs/ChangeSet}
+    {:cs/changeReason    "new",
+     :cs/createdDate     #inst "2016-03-15T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.relationshipSubType/dlc,
+     :cs/subjectOfChange :loc.preservation.relationshipSubType/isr,
+     :rdf/type           :cs/ChangeSet}],
+   :skos/definition
+   {:rdf/language "en",
+    :rdf/value
+    "A relationship in which an abstract intellectual entity is represented as a file or representation or a software agent is represented by an environment object. Has a reciprocal relationship of represents."},
+   :skos/inScheme [:loc.vocabulary/preservation
+                   :loc.preservation/relationshipSubType],
+   :skos/notation "isr",
+   :skos/prefLabel "is Represented By"})
 
 (def iss
-  "is Superseded By"
+  "A relationship between an environment object and another where the described object has been replaced by another. This allows for an audit trail of environments to be maintained. Has a reciprocal relationship of supersedes."
   {:db/ident :loc.preservation.relationshipSubType/iss,
+   :madsrdf/adminMetadata
+   [{:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2018-09-24T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.relationshipSubType/dlc,
+     :ri/recordStatus "modified"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2016-03-15T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.relationshipSubType/dlc,
+     :ri/recordStatus "new"}],
    :madsrdf/authoritativeLabel "is Superseded By",
-   :rdf/type :madsrdf/Authority})
+   :madsrdf/code "iss",
+   :madsrdf/definitionNote
+   {:rdf/language "en",
+    :rdf/value
+    "A relationship between an environment object and another where the described object has been replaced by another. This allows for an audit trail of environments to be maintained. Has a reciprocal relationship of supersedes."},
+   :madsrdf/hasBroaderAuthority :loc.preservation.relationshipType/rep,
+   :madsrdf/isMemberOfMADSCollection
+   :loc.preservation.relationshipSubType/collection_PREMIS,
+   :madsrdf/isMemberOfMADSScheme [:loc.preservation/relationshipSubType
+                                  :loc.vocabulary/preservation],
+   :rdf/type :madsrdf/Authority,
+   :rdfs/subPropertyOf :premis/relationship,
+   :skos/broader :loc.preservation.relationshipType/rep,
+   :skos/changeNote
+   [{:cs/changeReason    "modified",
+     :cs/createdDate     #inst "2018-09-24T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.relationshipSubType/dlc,
+     :cs/subjectOfChange :loc.preservation.relationshipSubType/iss,
+     :rdf/type           :cs/ChangeSet}
+    {:cs/changeReason    "new",
+     :cs/createdDate     #inst "2016-03-15T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.relationshipSubType/dlc,
+     :cs/subjectOfChange :loc.preservation.relationshipSubType/iss,
+     :rdf/type           :cs/ChangeSet}],
+   :skos/definition
+   {:rdf/language "en",
+    :rdf/value
+    "A relationship between an environment object and another where the described object has been replaced by another. This allows for an audit trail of environments to be maintained. Has a reciprocal relationship of supersedes."},
+   :skos/inScheme [:loc.vocabulary/preservation
+                   :loc.preservation/relationshipSubType],
+   :skos/notation "iss",
+   :skos/prefLabel "is Superseded By"})
 
 (def rep
-  "represents"
+  "A relationship in which a file or representation is captured in an abstract intellectual entity description that it represents. It is a statement of what can depict or stand for the Intellectual Entity. Has a reciprocal relationship of isRepresentedBy."
   {:db/ident :loc.preservation.relationshipSubType/rep,
+   :madsrdf/adminMetadata
+   [{:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2018-09-24T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.relationshipSubType/dlc,
+     :ri/recordStatus "modified"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2016-03-15T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.relationshipSubType/dlc,
+     :ri/recordStatus "new"}],
    :madsrdf/authoritativeLabel "represents",
-   :rdf/type :madsrdf/Authority})
+   :madsrdf/code "rep",
+   :madsrdf/definitionNote
+   {:rdf/language "en",
+    :rdf/value
+    "A relationship in which a file or representation is captured in an abstract intellectual entity description that it represents. It is a statement of what can depict or stand for the Intellectual Entity. Has a reciprocal relationship of isRepresentedBy."},
+   :madsrdf/hasBroaderAuthority :loc.preservation.relationshipType/str,
+   :madsrdf/isMemberOfMADSCollection
+   :loc.preservation.relationshipSubType/collection_PREMIS,
+   :madsrdf/isMemberOfMADSScheme [:loc.preservation/relationshipSubType
+                                  :loc.vocabulary/preservation],
+   :rdf/type :madsrdf/Authority,
+   :rdfs/subPropertyOf :premis/relationship,
+   :skos/broader :loc.preservation.relationshipType/str,
+   :skos/changeNote
+   [{:cs/changeReason    "new",
+     :cs/createdDate     #inst "2016-03-15T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.relationshipSubType/dlc,
+     :cs/subjectOfChange :loc.preservation.relationshipSubType/rep,
+     :rdf/type           :cs/ChangeSet}
+    {:cs/changeReason    "modified",
+     :cs/createdDate     #inst "2018-09-24T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.relationshipSubType/dlc,
+     :cs/subjectOfChange :loc.preservation.relationshipSubType/rep,
+     :rdf/type           :cs/ChangeSet}],
+   :skos/definition
+   {:rdf/language "en",
+    :rdf/value
+    "A relationship in which a file or representation is captured in an abstract intellectual entity description that it represents. It is a statement of what can depict or stand for the Intellectual Entity. Has a reciprocal relationship of isRepresentedBy."},
+   :skos/inScheme [:loc.vocabulary/preservation
+                   :loc.preservation/relationshipSubType],
+   :skos/notation "rep",
+   :skos/prefLabel "represents"})
 
 (def req
-  "requires"
+  "The relationship of an object to another object, where it requires a particular environment or non-environment object to be rendered or to be run. For instance, a file of format Word 97, requires MS Word 1997 to render it. Has a reciprocal relationship of isRequiredBy."
   {:db/ident :loc.preservation.relationshipSubType/req,
+   :madsrdf/adminMetadata
+   [{:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2018-09-24T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.relationshipSubType/dlc,
+     :ri/recordStatus "modified"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2016-03-15T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.relationshipSubType/dlc,
+     :ri/recordStatus "new"}],
    :madsrdf/authoritativeLabel "requires",
-   :rdf/type :madsrdf/Authority})
+   :madsrdf/code "req",
+   :madsrdf/definitionNote
+   {:rdf/language "en",
+    :rdf/value
+    "The relationship of an object to another object, where it requires a particular environment or non-environment object to be rendered or to be run. For instance, a file of format Word 97, requires MS Word 1997 to render it. Has a reciprocal relationship of isRequiredBy."},
+   :madsrdf/hasBroaderAuthority :loc.preservation.relationshipType/dep,
+   :madsrdf/isMemberOfMADSCollection
+   :loc.preservation.relationshipSubType/collection_PREMIS,
+   :madsrdf/isMemberOfMADSScheme [:loc.preservation/relationshipSubType
+                                  :loc.vocabulary/preservation],
+   :rdf/type :madsrdf/Authority,
+   :rdfs/subPropertyOf :premis/relationship,
+   :skos/broader :loc.preservation.relationshipType/dep,
+   :skos/changeNote
+   [{:cs/changeReason    "new",
+     :cs/createdDate     #inst "2016-03-15T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.relationshipSubType/dlc,
+     :cs/subjectOfChange :loc.preservation.relationshipSubType/req,
+     :rdf/type           :cs/ChangeSet}
+    {:cs/changeReason    "modified",
+     :cs/createdDate     #inst "2018-09-24T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.relationshipSubType/dlc,
+     :cs/subjectOfChange :loc.preservation.relationshipSubType/req,
+     :rdf/type           :cs/ChangeSet}],
+   :skos/definition
+   {:rdf/language "en",
+    :rdf/value
+    "The relationship of an object to another object, where it requires a particular environment or non-environment object to be rendered or to be run. For instance, a file of format Word 97, requires MS Word 1997 to render it. Has a reciprocal relationship of isRequiredBy."},
+   :skos/inScheme [:loc.preservation/relationshipSubType
+                   :loc.vocabulary/preservation],
+   :skos/notation "req",
+   :skos/prefLabel "requires"})
 
 (def spe
-  "specializes"
+  "A relationship between an environment object and another where the described object provides specific characteristics, while the related environment is more generic. Has a reciprocal relationship of generalizes."
   {:db/ident :loc.preservation.relationshipSubType/spe,
+   :madsrdf/adminMetadata
+   [{:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2016-03-15T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.relationshipSubType/dlc,
+     :ri/recordStatus "new"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2018-09-24T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.relationshipSubType/dlc,
+     :ri/recordStatus "modified"}],
    :madsrdf/authoritativeLabel "specializes",
-   :rdf/type :madsrdf/Authority})
+   :madsrdf/code "spe",
+   :madsrdf/definitionNote
+   {:rdf/language "en",
+    :rdf/value
+    "A relationship between an environment object and another where the described object provides specific characteristics, while the related environment is more generic. Has a reciprocal relationship of generalizes."},
+   :madsrdf/hasBroaderAuthority :loc.preservation.relationshipType/log,
+   :madsrdf/isMemberOfMADSCollection
+   :loc.preservation.relationshipSubType/collection_PREMIS,
+   :madsrdf/isMemberOfMADSScheme [:loc.preservation/relationshipSubType
+                                  :loc.vocabulary/preservation],
+   :rdf/type :madsrdf/Authority,
+   :rdfs/subPropertyOf :premis/relationship,
+   :skos/broader :loc.preservation.relationshipType/log,
+   :skos/changeNote
+   [{:cs/changeReason    "modified",
+     :cs/createdDate     #inst "2018-09-24T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.relationshipSubType/dlc,
+     :cs/subjectOfChange :loc.preservation.relationshipSubType/spe,
+     :rdf/type           :cs/ChangeSet}
+    {:cs/changeReason    "new",
+     :cs/createdDate     #inst "2016-03-15T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.relationshipSubType/dlc,
+     :cs/subjectOfChange :loc.preservation.relationshipSubType/spe,
+     :rdf/type           :cs/ChangeSet}],
+   :skos/definition
+   {:rdf/language "en",
+    :rdf/value
+    "A relationship between an environment object and another where the described object provides specific characteristics, while the related environment is more generic. Has a reciprocal relationship of generalizes."},
+   :skos/inScheme [:loc.preservation/relationshipSubType
+                   :loc.vocabulary/preservation],
+   :skos/notation "spe",
+   :skos/prefLabel "specializes"})
 
 (def sup
-  "supersedes"
+  "A relationship between an environment object and another where the described object replaces another. This allows for an audit trail of environments to be maintained. Has a reciprocal relationship of isSupersededBy."
   {:db/ident :loc.preservation.relationshipSubType/sup,
+   :madsrdf/adminMetadata
+   [{:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2016-03-15T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.relationshipSubType/dlc,
+     :ri/recordStatus "new"}
+    {:rdf/type :ri/RecordInfo,
+     :ri/recordChangeDate #inst "2018-09-24T04:00:01.000-00:00",
+     :ri/recordContentSource :loc.preservation.relationshipSubType/dlc,
+     :ri/recordStatus "modified"}],
    :madsrdf/authoritativeLabel "supersedes",
-   :rdf/type :madsrdf/Authority})
+   :madsrdf/code "sup",
+   :madsrdf/definitionNote
+   {:rdf/language "en",
+    :rdf/value
+    "A relationship between an environment object and another where the described object replaces another. This allows for an audit trail of environments to be maintained. Has a reciprocal relationship of isSupersededBy."},
+   :madsrdf/hasBroaderAuthority :loc.preservation.relationshipType/rep,
+   :madsrdf/isMemberOfMADSCollection
+   :loc.preservation.relationshipSubType/collection_PREMIS,
+   :madsrdf/isMemberOfMADSScheme [:loc.preservation/relationshipSubType
+                                  :loc.vocabulary/preservation],
+   :rdf/type :madsrdf/Authority,
+   :rdfs/subPropertyOf :premis/relationship,
+   :skos/broader :loc.preservation.relationshipType/rep,
+   :skos/changeNote
+   [{:cs/changeReason    "modified",
+     :cs/createdDate     #inst "2018-09-24T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.relationshipSubType/dlc,
+     :cs/subjectOfChange :loc.preservation.relationshipSubType/sup,
+     :rdf/type           :cs/ChangeSet}
+    {:cs/changeReason    "new",
+     :cs/createdDate     #inst "2016-03-15T04:00:01.000-00:00",
+     :cs/creatorName     :loc.preservation.relationshipSubType/dlc,
+     :cs/subjectOfChange :loc.preservation.relationshipSubType/sup,
+     :rdf/type           :cs/ChangeSet}],
+   :skos/definition
+   {:rdf/language "en",
+    :rdf/value
+    "A relationship between an environment object and another where the described object replaces another. This allows for an audit trail of environments to be maintained. Has a reciprocal relationship of isSupersededBy."},
+   :skos/inScheme [:loc.vocabulary/preservation
+                   :loc.preservation/relationshipSubType],
+   :skos/notation "sup",
+   :skos/prefLabel "supersedes"})
 
 (def ^{:private true} relationshipSubType
   "A specific characterization of the nature of the relationship between this object and one or more other objects."
@@ -231,13 +1347,13 @@
    :rdfs/label {:rdf/language "en",
                 :rdf/value    "Relationship Subtype"},
    :skos/broader :loc.preservation/relationshipType,
-   :skos/changeNote [{:cs/changeReason    "modified",
-                      :cs/createdDate     #inst "2018-09-24T04:00:01.000-00:00",
+   :skos/changeNote [{:cs/changeReason    "new",
+                      :cs/createdDate     #inst "2012-08-01T04:00:01.000-00:00",
                       :cs/creatorName     :loc.preservation/dlc,
                       :cs/subjectOfChange :loc.preservation/relationshipSubType,
                       :rdf/type           :cs/ChangeSet}
-                     {:cs/changeReason    "new",
-                      :cs/createdDate     #inst "2012-08-01T04:00:01.000-00:00",
+                     {:cs/changeReason    "modified",
+                      :cs/createdDate     #inst "2018-09-24T04:00:01.000-00:00",
                       :cs/creatorName     :loc.preservation/dlc,
                       :cs/subjectOfChange :loc.preservation/relationshipSubType,
                       :rdf/type           :cs/ChangeSet}]})
