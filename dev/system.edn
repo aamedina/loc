@@ -16,16 +16,21 @@
                         #_net.wikipunk.loc.boot/eventRelatedAgentRole
                         #_net.wikipunk.loc.boot/eventRelatedObjectRole
                         #_net.wikipunk.loc.boot/eventType
+                        #_net.wikipunk.loc.boot/fingerprintschemes
                         #_net.wikipunk.loc.boot/formatRegistryRole
                         #_net.wikipunk.loc.boot/genreForms
                         #_net.wikipunk.loc.boot/hardwareType
                         #_net.wikipunk.loc.boot/identifiers
                         #_net.wikipunk.loc.boot/inhibitorTarget
                         #_net.wikipunk.loc.boot/inhibitorType
+                        #_net.wikipunk.loc.boot/languageschemes
                         #_net.wikipunk.loc.boot/lcc
                         #_net.wikipunk.loc.boot/linkingAgentRoleEvent
                         #_net.wikipunk.loc.boot/linkingEnvironmentRole
+                        #_net.wikipunk.loc.boot/mcfcsc
                         #_net.wikipunk.loc.boot/musiccodeschemes
+                        #_net.wikipunk.loc.boot/nationalbibschemes
+                        #_net.wikipunk.loc.boot/nameTitleSchemes
                         #_net.wikipunk.loc.boot/objectCategory
                         #_net.wikipunk.loc.boot/preservation
                         #_net.wikipunk.loc.boot/preservationLevelRole

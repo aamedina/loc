@@ -261,3 +261,33 @@
    :rdf/type         :rdfa/PrefixMapping,
    :rdfa/prefix      "loc.musiccodeschemes",
    :rdfa/uri         "http://id.loc.gov/vocabulary/musiccodeschemes/"})
+
+(def nationalbibschemes
+  {:dcat/downloadURL "https://id.loc.gov/vocabulary/nationalbibschemes.rdf",
+   :rdf/type         :rdfa/PrefixMapping,
+   :rdfa/prefix      "loc.nationalbibschemes",
+   :rdfa/uri         "http://id.loc.gov/vocabulary/nationalbibschemes/"})
+
+(def fingerprintschemes
+  {:dcat/downloadURL "https://id.loc.gov/vocabulary/fingerprintschemes.rdf",
+   :rdf/type         :rdfa/PrefixMapping,
+   :rdfa/prefix      "loc.fingerprintschemes",
+   :rdfa/uri         "http://id.loc.gov/vocabulary/fingerprintschemes/"})
+
+(def languageschemes
+  {:dcat/downloadURL "https://id.loc.gov/vocabulary/languageschemes.rdf",
+   :rdf/type         :rdfa/PrefixMapping,
+   :rdfa/prefix      "loc.languageschemes",
+   :rdfa/uri         "http://id.loc.gov/vocabulary/languageschemes/"})
+
+(def mcfcsc
+  {:dcat/downloadURL "https://id.loc.gov/vocabulary/mcfcsc.rdf",
+   :rdf/type         :rdfa/PrefixMapping,
+   :rdfa/prefix      "loc.mcfcsc",
+   :rdfa/uri         "http://id.loc.gov/vocabulary/mcfcsc/"})
+
+(def nameTitleSchemes
+  {:dcat/downloadURL "https://id.loc.gov/vocabulary/nameTitleSchemes.rdf",
+   :rdf/type         :rdfa/PrefixMapping,
+   :rdfa/prefix      "loc.nameTitleSchemes",
+   :rdfa/uri         "http://id.loc.gov/vocabulary/nameTitleSchemes/"})
