@@ -255,3 +255,9 @@
    :rdf/type :rdfa/PrefixMapping,
    :rdfa/prefix "loc.preservation.storageMedium",
    :rdfa/uri "http://id.loc.gov/vocabulary/preservation/storageMedium/"})
+
+(def musiccodeschemes
+  {:dcat/downloadURL "https://id.loc.gov/vocabulary/musiccodeschemes.rdf",
+   :rdf/type         :rdfa/PrefixMapping,
+   :rdfa/prefix      "loc.musiccodeschemes",
+   :rdfa/uri         "http://id.loc.gov/vocabulary/musiccodeschemes/"})
