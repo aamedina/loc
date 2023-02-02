@@ -21,6 +21,22 @@
    :rdfa/uri    "http://id.loc.gov/ontologies/lcc#"
    :rdfa/prefix "lcc"})
 
+(def authorities
+  {:rdf/type    :rdfa/PrefixMapping
+   :rdfa/uri    "http://id.loc.gov/authorities/"
+   :rdfa/prefix "loc.authorities"})
+
+(def vocabulary
+  {:rdf/type    :rdfa/PrefixMapping
+   :rdfa/uri    "http://id.loc.gov/vocabulary/"
+   :rdfa/prefix "loc.vocabulary"})
+
+(def resourceTypes
+  {:dcat/downloadURL "https://id.loc.gov/vocabulary/resourceTypes.rdf"
+   :rdf/type         :rdfa/PrefixMapping
+   :rdfa/uri         "http://id.loc.gov/vocabulary/resourceTypes/"
+   :rdfa/prefix      "loc.resourceTypes"})
+
 (def actionsGranted
   {:dcat/downloadURL
    "http://id.loc.gov/vocabulary/preservation/actionsGranted.rdf",

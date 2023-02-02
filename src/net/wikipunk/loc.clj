@@ -11,14 +11,14 @@
    [net.wikipunk.rdf.bf]
    [net.wikipunk.rdf.bflc]
    [net.wikipunk.rdf.madsrdf]
-   [net.wikipunk.rdf.premis]
-   #_[net.wikipunk.rdf.loc.record]
-   #_[net.wikipunk.rdf.loc.identifiers]
-   #_[net.wikipunk.rdf.loc.preservation]))
+   [net.wikipunk.rdf.premis]))
+
+(declare quickstart)
 
 (defrecord LOC [vocab boot]
   com/Lifecycle
   (start [this]
+    (quickstart)
     this)
   (stop [this]
     this)
@@ -26,3 +26,12 @@
   rdf/NamespaceSpitter
   (emit [_ arg-map]
     (rdf/emit boot arg-map)))
+
+(defn quickstart
+  []
+  (try
+    (require 'net.wikipunk.rdf.lcc
+             'net.wikipunk.rdf.ri
+             'net.wikipunk.rdf.identifiers)
+    (catch Throwable ex
+      (clojure.repl/pst ex))))
