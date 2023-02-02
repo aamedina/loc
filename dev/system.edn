@@ -1,0 +1,7 @@
+{:vocab {:sc/create-fn net.wikipunk.rdf/map->UniversalTranslator
+         :sc/refs      [:loc]
+         :init-ns      net.wikipunk.mop.init}
+ :loc   {:sc/create-fn net.wikipunk.loc/map->LOC
+         :boot         [net.wikipunk.loc.boot/record
+                        net.wikipunk.loc.boot/identifiers
+                        net.wikipunk.loc.boot/preservation]}}
