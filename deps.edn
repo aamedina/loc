@@ -2,7 +2,7 @@
  {com.stuartsierra/component
   {:mvn/version "1.1.0"}
   io.github.aamedina/rdf
-  {:git/sha "c37b9a36106b076d93bd22ed44384dccf438d81c"}
+  {:git/sha "58accaa0660bcf89c236749327c706c232c66648"}
   org.clojure/clojure
   {:mvn/version "1.11.1"}}
  :paths ["src" "classes"]
@@ -13,8 +13,6 @@
     {:mvn/version "1.3.0"}
     com.stuartsierra/component.repl
     {:mvn/version "0.2.0"}
-    io.github.aamedina/rdf
-    {:local/root "../rdf"}
     org.clojure/test.check
     {:mvn/version "1.1.1"}
     org.clojure/tools.namespace
@@ -22,8 +20,7 @@
     org.slf4j/slf4j-simple
     {:mvn/version "1.7.36"}}
    :extra-paths ["dev"]
-   :jvm-opts    ["-Xmx100g"
-                 "-XX:-OmitStackTraceInFastThrow"
+   :jvm-opts    ["-XX:-OmitStackTraceInFastThrow"
                  "-XX:+HeapDumpOnOutOfMemoryError"
                  "-Dorg.slf4j.simpleLogger.defaultLogLevel=warn"
                  "-Djdk.xml.entityExpansionLimit=0"
