@@ -11,7 +11,9 @@
    [net.wikipunk.rdf.bf]
    [net.wikipunk.rdf.bflc]
    [net.wikipunk.rdf.madsrdf]
-   [net.wikipunk.rdf.premis]))
+   [net.wikipunk.rdf.premis]
+   [net.wikipunk.rdf.skos]
+   [net.wikipunk.rdf.skosxl]))
 
 (declare quickstart)
 

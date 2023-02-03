@@ -302,3 +302,21 @@
    :rdf/type         :rdfa/PrefixMapping,
    :rdfa/prefix      "loc.edtf",
    :rdfa/uri         "http://id.loc.gov/datatypes/edtf/"})
+
+(def geographicAreas
+  {:dcat/downloadURL "https://id.loc.gov/vocabulary/geographicAreas.rdf",
+   :rdf/type         :rdfa/PrefixMapping,
+   :rdfa/prefix      "loc.geographicAreas",
+   :rdfa/uri         "http://id.loc.gov/vocabulary/geographicAreas/"})
+
+(def countries
+  {:dcat/downloadURL "https://id.loc.gov/vocabulary/countries.rdf",
+   :rdf/type         :rdfa/PrefixMapping,
+   :rdfa/prefix      "loc.countries",
+   :rdfa/uri         "http://id.loc.gov/vocabulary/countries/"})
+
+(def organizations
+  {:dcat/downloadURL "https://id.loc.gov/vocabulary/organizations.rdf",
+   :rdf/type         :rdfa/PrefixMapping,
+   :rdfa/prefix      "loc.organizations",
+   :rdfa/uri         "http://id.loc.gov/vocabulary/organizations/"})
