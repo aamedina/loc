@@ -4,15 +4,19 @@
  :loc   {:sc/create-fn net.wikipunk.loc/map->LOC
          :boot         [#_net.wikipunk.loc.boot/actionsGranted
                         #_net.wikipunk.loc.boot/agentType
+                        #_net.wikipunk.loc.boot/childrensSubjects
+                        #_net.wikipunk.loc.boot/classification
+                        #_net.wikipunk.loc.boot/classSchemes
                         #_net.wikipunk.loc.boot/contentLocationType
                         #_net.wikipunk.loc.boot/copyrightStatus
                         #_net.wikipunk.loc.boot/countries
                         #_net.wikipunk.loc.boot/cryptographicHashFunctions
-                        #_net.wikipunk.loc.boot/demographicTerms
+                        #_net.wikipunk.loc.boot/demographicTerms                        
                         #_net.wikipunk.loc.boot/environmentCharacteristic
                         #_net.wikipunk.loc.boot/environmentFunctionType
                         #_net.wikipunk.loc.boot/environmentPurpose
                         #_net.wikipunk.loc.boot/environmentRegistryRole
+                        #_net.wikipunk.loc.boot/ethnographicTerms
                         #_net.wikipunk.loc.boot/eventOutcome
                         #_net.wikipunk.loc.boot/eventRelatedAgentRole
                         #_net.wikipunk.loc.boot/eventRelatedObjectRole
@@ -20,21 +24,32 @@
                         #_net.wikipunk.loc.boot/fingerprintschemes
                         #_net.wikipunk.loc.boot/formatRegistryRole                        
                         #_net.wikipunk.loc.boot/genreForms
+                        #_net.wikipunk.loc.boot/genreFormSchemes
                         #_net.wikipunk.loc.boot/geographicAreas
+                        #_net.wikipunk.loc.boot/graphicMaterials
                         #_net.wikipunk.loc.boot/hardwareType
+                        #_net.wikipunk.loc.boot/hubs
                         #_net.wikipunk.loc.boot/identifiers
                         #_net.wikipunk.loc.boot/inhibitorTarget
                         #_net.wikipunk.loc.boot/inhibitorType
+                        #_net.wikipunk.loc.boot/instances
+                        #_net.wikipunk.loc.boot/iso639-1
+                        #_net.wikipunk.loc.boot/iso639-2
+                        #_net.wikipunk.loc.boot/iso639-5
+                        #_net.wikipunk.loc.boot/languages
                         #_net.wikipunk.loc.boot/languageschemes
                         #_net.wikipunk.loc.boot/lcc
                         #_net.wikipunk.loc.boot/linkingAgentRoleEvent
                         #_net.wikipunk.loc.boot/linkingEnvironmentRole
+                        #_net.wikipunk.loc.boot/marcgt
                         #_net.wikipunk.loc.boot/mcfcsc
                         #_net.wikipunk.loc.boot/musiccodeschemes
+                        #_net.wikipunk.loc.boot/names
                         #_net.wikipunk.loc.boot/nationalbibschemes
                         #_net.wikipunk.loc.boot/nameTitleSchemes
                         #_net.wikipunk.loc.boot/objectCategory
                         #_net.wikipunk.loc.boot/organizations
+                        #_net.wikipunk.loc.boot/performanceMediums
                         #_net.wikipunk.loc.boot/preservation
                         #_net.wikipunk.loc.boot/preservationLevelRole
                         #_net.wikipunk.loc.boot/preservationLevelType
@@ -47,4 +62,7 @@
                         #_net.wikipunk.loc.boot/signatureEncoding
                         #_net.wikipunk.loc.boot/signatureMethod
                         #_net.wikipunk.loc.boot/softwareType
-                        #_net.wikipunk.loc.boot/storageMedium]}}
+                        #_net.wikipunk.loc.boot/storageMedium
+                        #_net.wikipunk.loc.boot/subjects
+                        #_net.wikipunk.loc.boot/subjectSchemes
+                        #_net.wikipunk.loc.boot/works]}}

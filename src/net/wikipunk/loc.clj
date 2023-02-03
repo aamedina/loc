@@ -10,8 +10,13 @@
    [net.wikipunk.mop :as mop]
    [net.wikipunk.rdf.bf]
    [net.wikipunk.rdf.bflc]
+   [net.wikipunk.rdf.cs]
+   [net.wikipunk.rdf.foaf]
    [net.wikipunk.rdf.madsrdf]
-   [net.wikipunk.rdf.premis]
+   [net.wikipunk.rdf.premis]   
+   [net.wikipunk.rdf.dc11]
+   [net.wikipunk.rdf.dcterms]
+   [net.wikipunk.rdf.dcam]
    [net.wikipunk.rdf.skos]
    [net.wikipunk.rdf.skosxl]))
 

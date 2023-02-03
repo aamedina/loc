@@ -3,3 +3,12 @@
 *.ttl.gz filter=lfs diff=lfs merge=lfs -text
 *.jsonld.gz filter=lfs diff=lfs merge=lfs -text
 *.nt.gz filter=lfs diff=lfs merge=lfs -text
+src/net/wikipunk/rdf/loc/childrensSubjects.clj filter=lfs diff=lfs merge=lfs -text
+src/net/wikipunk/rdf/loc/demographicTerms.clj filter=lfs diff=lfs merge=lfs -text
+src/net/wikipunk/rdf/loc/ethnographicTerms.clj filter=lfs diff=lfs merge=lfs -text
+src/net/wikipunk/rdf/loc/genreForms.clj filter=lfs diff=lfs merge=lfs -text
+src/net/wikipunk/rdf/loc/graphicMaterials.clj filter=lfs diff=lfs merge=lfs -text
+src/net/wikipunk/rdf/loc/subjects.clj filter=lfs diff=lfs merge=lfs -text
+src/net/wikipunk/rdf/loc/works.clj filter=lfs diff=lfs merge=lfs -text
+src/net/wikipunk/rdf/loc/hubs.clj filter=lfs diff=lfs merge=lfs -text
+src/net/wikipunk/rdf/loc/names.clj filter=lfs diff=lfs merge=lfs -text
