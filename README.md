@@ -239,3 +239,490 @@ dev> (datafy :loc.genreForms/gf2022026059)
    :rdf/type :madsrdf/Source}],
  :madsrdf/authoritativeLabel "Prank telephone calls@en"}
 ```
+
+``` clojure
+dev> (require 'net.wikipunk.rdf.loc.organizations)
+dev> (reset)
+dev> (doc :loc.organizations/dlc)
+-------------------------
+:loc.organizations/dlc
+   United States, Library of Congress
+  isa?
+  :madsrdf/CorporateName
+   :madsrdf/Name
+    :madsrdf/MADSType
+     :skos/Concept
+      :madsrdf/SimpleType
+       :madsrdf/Authority
+        :owl/Class
+         :rdfs/Class
+dev> (run! rdf/print-doc (descendants :loc.organizations/dlc))
+-------------------------
+:loc.organizations/dlcismn
+   U.S. ISMN Agency
+  isa?
+  :loc.organizations/dlc
+   :madsrdf/CorporateName
+    :madsrdf/Name
+     :madsrdf/MADSType
+      :skos/Concept
+       :madsrdf/SimpleType
+        :madsrdf/Authority
+         :owl/Class
+          :rdfs/Class
+-------------------------
+:loc.organizations/dlcr
+   United States, Library of Congress, Regional and Cooperative Cataloging Division
+  isa?
+  :loc.organizations/dlc
+   :madsrdf/CorporateName
+    :madsrdf/Name
+     :madsrdf/MADSType
+      :skos/Concept
+       :madsrdf/SimpleType
+        :madsrdf/Authority
+         :owl/Class
+          :rdfs/Class
+-------------------------
+:loc.organizations/dlcstbd
+   Library of Congress, Science, Technology and Business Division
+  isa?
+  :loc.organizations/dlc
+   :madsrdf/CorporateName
+    :madsrdf/Name
+     :madsrdf/MADSType
+      :skos/Concept
+       :madsrdf/SimpleType
+        :madsrdf/Authority
+         :owl/Class
+          :rdfs/Class
+-------------------------
+:loc.organizations/dlcbm
+   United States, Library of Congress, National Library Service for the Blind and Physically Handicapped, Music Library
+  isa?
+  :loc.organizations/dlc
+   :madsrdf/CorporateName
+    :madsrdf/Name
+     :madsrdf/MADSType
+      :skos/Concept
+       :madsrdf/SimpleType
+        :madsrdf/Authority
+         :owl/Class
+          :rdfs/Class
+-------------------------
+:loc.organizations/dlcm
+   United States, Library of Congress, Music Division
+  isa?
+  :loc.organizations/dlc
+   :madsrdf/CorporateName
+    :madsrdf/Name
+     :madsrdf/MADSType
+      :skos/Concept
+       :madsrdf/SimpleType
+        :madsrdf/Authority
+         :owl/Class
+          :rdfs/Class
+-------------------------
+:loc.organizations/dlcb
+   United States, Library of Congress, National Library Service for the Blind and Physically Handicapped
+  isa?
+  :loc.organizations/dlc
+   :madsrdf/CorporateName
+    :madsrdf/Name
+     :madsrdf/MADSType
+      :skos/Concept
+       :madsrdf/SimpleType
+        :madsrdf/Authority
+         :owl/Class
+          :rdfs/Class
+-------------------------
+:loc.organizations/dlcntc
+   United States, Library of Congress, National Translations Center
+  isa?
+  :loc.organizations/dlc
+   :madsrdf/CorporateName
+    :madsrdf/Name
+     :madsrdf/MADSType
+      :skos/Concept
+       :madsrdf/SimpleType
+        :madsrdf/Authority
+         :owl/Class
+          :rdfs/Class
+-------------------------
+:loc.organizations/dlcvhp
+   Veterans History Project, Library of Congress
+  isa?
+  :loc.organizations/dlc
+   :madsrdf/CorporateName
+    :madsrdf/Name
+     :madsrdf/MADSType
+      :skos/Concept
+       :madsrdf/SimpleType
+        :madsrdf/Authority
+         :owl/Class
+          :rdfs/Class
+-------------------------
+:loc.organizations/dlcss
+   United States, Library of Congress, Social Sciences Cataloging Division
+  isa?
+  :loc.organizations/dlc
+   :madsrdf/CorporateName
+    :madsrdf/Name
+     :madsrdf/MADSType
+      :skos/Concept
+       :madsrdf/SimpleType
+        :madsrdf/Authority
+         :owl/Class
+          :rdfs/Class
+-------------------------
+:loc.organizations/dlcmpmi
+   Library of Congress, Motion Picture, Broadcasting and Recorded Sound Division, Moving Image Section
+  isa?
+  :loc.organizations/dlc
+   :madsrdf/CorporateName
+    :madsrdf/Name
+     :madsrdf/MADSType
+      :skos/Concept
+       :madsrdf/SimpleType
+        :madsrdf/Authority
+         :owl/Class
+          :rdfs/Class
+-------------------------
+:loc.organizations/dlcsgp
+   Library of Congress Serial and Government Publications Division
+  isa?
+  :loc.organizations/dlc
+   :madsrdf/CorporateName
+    :madsrdf/Name
+     :madsrdf/MADSType
+      :skos/Concept
+       :madsrdf/SimpleType
+        :madsrdf/Authority
+         :owl/Class
+          :rdfs/Class
+-------------------------
+:loc.organizations/dlcrs
+   Library of Congress, Motion Picture, Broadcasting, and Recorded Sound Division, Recorded Sound Section
+  isa?
+  :loc.organizations/dlc
+   :madsrdf/CorporateName
+    :madsrdf/Name
+     :madsrdf/MADSType
+      :skos/Concept
+       :madsrdf/SimpleType
+        :madsrdf/Authority
+         :owl/Class
+          :rdfs/Class
+-------------------------
+:loc.organizations/dlcnr
+   United States, Library of Congress, National Resources Program Office
+  isa?
+  :loc.organizations/dlc
+   :madsrdf/CorporateName
+    :madsrdf/Name
+     :madsrdf/MADSType
+      :skos/Concept
+       :madsrdf/SimpleType
+        :madsrdf/Authority
+         :owl/Class
+          :rdfs/Class
+-------------------------
+:loc.organizations/dlcpp
+   Library of Congress, Prints & Photographs Division
+  isa?
+  :loc.organizations/dlc
+   :madsrdf/CorporateName
+    :madsrdf/Name
+     :madsrdf/MADSType
+      :skos/Concept
+       :madsrdf/SimpleType
+        :madsrdf/Authority
+         :owl/Class
+          :rdfs/Class
+-------------------------
+:loc.organizations/dlcmrc
+   United States, Library of Congress, Network Development and MARC Standards Office
+  isa?
+  :loc.organizations/dlc
+   :madsrdf/CorporateName
+    :madsrdf/Name
+     :madsrdf/MADSType
+      :skos/Concept
+       :madsrdf/SimpleType
+        :madsrdf/Authority
+         :owl/Class
+          :rdfs/Class
+-------------------------
+:loc.organizations/dlclca
+   Library of Congress Archives
+  isa?
+  :loc.organizations/dlc
+   :madsrdf/CorporateName
+    :madsrdf/Name
+     :madsrdf/MADSType
+      :skos/Concept
+       :madsrdf/SimpleType
+        :madsrdf/Authority
+         :owl/Class
+          :rdfs/Class
+-------------------------
+:loc.organizations/dlcad
+   Library of Congress, Asian Division
+  isa?
+  :loc.organizations/dlc
+   :madsrdf/CorporateName
+    :madsrdf/Name
+     :madsrdf/MADSType
+      :skos/Concept
+       :madsrdf/SimpleType
+        :madsrdf/Authority
+         :owl/Class
+          :rdfs/Class
+-------------------------
+:loc.organizations/dlcrbsc
+   Library of Congress, Rare Book and Special Collections Division
+  isa?
+  :loc.organizations/dlc
+   :madsrdf/CorporateName
+    :madsrdf/Name
+     :madsrdf/MADSType
+      :skos/Concept
+       :madsrdf/SimpleType
+        :madsrdf/Authority
+         :owl/Class
+          :rdfs/Class
+-------------------------
+:loc.organizations/dlcpf
+   United States, Library of Congress, Priority Four Collection Unit
+  isa?
+  :loc.organizations/dlc
+   :madsrdf/CorporateName
+    :madsrdf/Name
+     :madsrdf/MADSType
+      :skos/Concept
+       :madsrdf/SimpleType
+        :madsrdf/Authority
+         :owl/Class
+          :rdfs/Class
+-------------------------
+:loc.organizations/dlcadc
+   United States, Library of Congress, Asian Division, Chinese Section
+  isa?
+  :loc.organizations/dlc
+   :madsrdf/CorporateName
+    :madsrdf/Name
+     :madsrdf/MADSType
+      :skos/Concept
+       :madsrdf/SimpleType
+        :madsrdf/Authority
+         :owl/Class
+          :rdfs/Class
+-------------------------
+:loc.organizations/dlced
+   Library of Congress, European Division
+  isa?
+  :loc.organizations/dlc
+   :madsrdf/CorporateName
+    :madsrdf/Name
+     :madsrdf/MADSType
+      :skos/Concept
+       :madsrdf/SimpleType
+        :madsrdf/Authority
+         :owl/Class
+          :rdfs/Class
+-------------------------
+:loc.organizations/dlcnucm
+   Library of Congress, National Union Catalog of Manuscript Collections
+  isa?
+  :loc.organizations/dlc
+   :madsrdf/CorporateName
+    :madsrdf/Name
+     :madsrdf/MADSType
+      :skos/Concept
+       :madsrdf/SimpleType
+        :madsrdf/Authority
+         :owl/Class
+          :rdfs/Class
+-------------------------
+:loc.organizations/dlcdcm
+   Library of Congress, Digital Collections Management Division
+  isa?
+  :loc.organizations/dlc
+   :madsrdf/CorporateName
+    :madsrdf/Name
+     :madsrdf/MADSType
+      :skos/Concept
+       :madsrdf/SimpleType
+        :madsrdf/Authority
+         :owl/Class
+          :rdfs/Class
+-------------------------
+:loc.organizations/dlcafc
+   United States, Library of Congress, American Folklife Center
+  isa?
+  :loc.organizations/dlc
+   :madsrdf/CorporateName
+    :madsrdf/Name
+     :madsrdf/MADSType
+      :skos/Concept
+       :madsrdf/SimpleType
+        :madsrdf/Authority
+         :owl/Class
+          :rdfs/Class
+-------------------------
+:loc.organizations/dlcn
+   United States, Library of Congress, National Serials Data Program Office
+  isa?
+  :loc.organizations/dlc
+   :madsrdf/CorporateName
+    :madsrdf/Name
+     :madsrdf/MADSType
+      :skos/Concept
+       :madsrdf/SimpleType
+        :madsrdf/Authority
+         :owl/Class
+          :rdfs/Class
+-------------------------
+:loc.organizations/dlcgm
+   Library of Congress, Geography & Map Division
+  isa?
+  :loc.organizations/dlc
+   :madsrdf/CorporateName
+    :madsrdf/Name
+     :madsrdf/MADSType
+      :skos/Concept
+       :madsrdf/SimpleType
+        :madsrdf/Authority
+         :owl/Class
+          :rdfs/Class
+-------------------------
+:loc.organizations/dlcs
+   United States, Library of Congress, Serial Record Division
+  isa?
+  :loc.organizations/dlc
+   :madsrdf/CorporateName
+    :madsrdf/Name
+     :madsrdf/MADSType
+      :skos/Concept
+       :madsrdf/SimpleType
+        :madsrdf/Authority
+         :owl/Class
+          :rdfs/Class
+-------------------------
+:loc.organizations/dlcl
+   United States, Library of Congress, Law Library
+  isa?
+  :loc.organizations/dlc
+   :madsrdf/CorporateName
+    :madsrdf/Name
+     :madsrdf/MADSType
+      :skos/Concept
+       :madsrdf/SimpleType
+        :madsrdf/Authority
+         :owl/Class
+          :rdfs/Class
+-------------------------
+:loc.organizations/dlcgb
+   United States, Library of Congress, Generalized Bibliography System Staff
+  isa?
+  :loc.organizations/dlc
+   :madsrdf/CorporateName
+    :madsrdf/Name
+     :madsrdf/MADSType
+      :skos/Concept
+       :madsrdf/SimpleType
+        :madsrdf/Authority
+         :owl/Class
+          :rdfs/Class
+-------------------------
+:loc.organizations/dlcesr
+   United States, Library of Congress, Early State Records Collection Staff
+  isa?
+  :loc.organizations/dlc
+   :madsrdf/CorporateName
+    :madsrdf/Name
+     :madsrdf/MADSType
+      :skos/Concept
+       :madsrdf/SimpleType
+        :madsrdf/Authority
+         :owl/Class
+          :rdfs/Class
+-------------------------
+:loc.organizations/dlcc
+   United States, Library of Congress, Congressional Research Service, Library
+  isa?
+  :loc.organizations/dlc
+   :madsrdf/CorporateName
+    :madsrdf/Name
+     :madsrdf/MADSType
+      :skos/Concept
+       :madsrdf/SimpleType
+        :madsrdf/Authority
+         :owl/Class
+          :rdfs/Class
+-------------------------
+:loc.organizations/dlcco
+   United States, Library of Congress, Copyright Office
+  isa?
+  :loc.organizations/dlc
+   :madsrdf/CorporateName
+    :madsrdf/Name
+     :madsrdf/MADSType
+      :skos/Concept
+       :madsrdf/SimpleType
+        :madsrdf/Authority
+         :owl/Class
+          :rdfs/Class
+-------------------------
+:loc.organizations/dlchd
+   Library of Congress, Hispanic Division
+  isa?
+  :loc.organizations/dlc
+   :madsrdf/CorporateName
+    :madsrdf/Name
+     :madsrdf/MADSType
+      :skos/Concept
+       :madsrdf/SimpleType
+        :madsrdf/Authority
+         :owl/Class
+          :rdfs/Class
+-------------------------
+:loc.organizations/dlcmss
+   Library of Congress, Manuscript Division
+  isa?
+  :loc.organizations/dlc
+   :madsrdf/CorporateName
+    :madsrdf/Name
+     :madsrdf/MADSType
+      :skos/Concept
+       :madsrdf/SimpleType
+        :madsrdf/Authority
+         :owl/Class
+          :rdfs/Class
+-------------------------
+:loc.organizations/dlcsm
+   United States, Library of Congress, Special Materials Cataloging Division
+  isa?
+  :loc.organizations/dlc
+   :madsrdf/CorporateName
+    :madsrdf/Name
+     :madsrdf/MADSType
+      :skos/Concept
+       :madsrdf/SimpleType
+        :madsrdf/Authority
+         :owl/Class
+          :rdfs/Class
+-------------------------
+:loc.organizations/dlchl
+   United States, Library of Congress, Hispanic Division, Handbook of Latin American Studies Section
+  isa?
+  :loc.organizations/dlc
+   :madsrdf/CorporateName
+    :madsrdf/Name
+     :madsrdf/MADSType
+      :skos/Concept
+       :madsrdf/SimpleType
+        :madsrdf/Authority
+         :owl/Class
+          :rdfs/Class
+```
