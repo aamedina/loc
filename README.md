@@ -158,3 +158,84 @@ dev> (->> (descendants :madsrdf/GenreForm)
        :owl/Class
         :rdfs/Class
 ```
+
+``` clojure
+dev> (datafy :loc.genreForms/gf2022026059)
+{:rdf/type [:madsrdf/GenreForm :madsrdf/Authority],
+ :mop/class-direct-slots [],
+ :madsrdf/elementList
+ [{:madsrdf/elementValue "Prank telephone calls@en",
+   :rdf/type :madsrdf/GenreFormElement}],
+ :madsrdf/hasVariant
+ [{:madsrdf/elementList
+   [{:madsrdf/elementValue "Crank calls@en",
+     :rdf/type :madsrdf/GenreFormElement}],
+   :madsrdf/variantLabel "Crank calls@en",
+   :rdf/type [:madsrdf/Variant :madsrdf/GenreForm]}
+  {:madsrdf/elementList
+   [{:madsrdf/elementValue "Crank telephone calls@en",
+     :rdf/type :madsrdf/GenreFormElement}],
+   :madsrdf/variantLabel "Crank telephone calls@en",
+   :rdf/type [:madsrdf/Variant :madsrdf/GenreForm]}
+  {:madsrdf/elementList
+   [{:madsrdf/elementValue "Prank calls@en",
+     :rdf/type :madsrdf/GenreFormElement}],
+   :madsrdf/variantLabel "Prank calls@en",
+   :rdf/type [:madsrdf/Variant :madsrdf/GenreForm]}],
+ :madsrdf/isMemberOfMADSScheme :loc.authorities/genreForms,
+ :identifiers/lccn "gf2022026059",
+ :madsrdf/isMemberOfMADSCollection
+ :loc.genreForms/collection_LCGFT_General,
+ :mop/class-direct-default-initargs {},
+ :mop/class-default-initargs {},
+ :bflc/marcKey "155  $aPrank telephone calls",
+ :db/ident :loc.genreForms/gf2022026059,
+ :mop/class-slots
+ [:foaf/focus
+  :skos/semanticRelation
+  :skos/topConceptOf
+  :madsrdf/isTopMemberOfMADSScheme
+  :madsrdf/isMemberOfMADSScheme
+  :madsrdf/isMemberOfMADSCollection
+  :madsrdf/identifiesRWO
+  :madsrdf/hasVariant
+  :madsrdf/hasRelatedAuthority
+  :madsrdf/hasHiddenVariant
+  :madsrdf/classification
+  :madsrdf/authoritativeLabel
+  :madsrdf/adminMetadata
+  :madsrdf/code
+  :madsrdf/see],
+ :madsrdf/hasBroaderAuthority :loc.genreForms/gf2014026265,
+ :mop/class-precedence-list
+ [:loc.genreForms/gf2022026059
+  :madsrdf/GenreForm
+  :madsrdf/MADSType
+  :skos/Concept
+  :madsrdf/SimpleType
+  :madsrdf/Authority
+  :owl/Class
+  :rdfs/Class],
+ :madsrdf/historyNote "[Established December 2022.]",
+ :madsrdf/adminMetadata
+ [{:rdf/type :ri/RecordInfo,
+   :ri/languageOfCataloging :loc.iso639-2/eng,
+   :ri/recordChangeDate #inst "2022-08-17T04:00:00.000-00:00",
+   :ri/recordContentSource :loc.organizations/dlc,
+   :ri/recordStatus "new"}
+  {:rdf/type :ri/RecordInfo,
+   :ri/languageOfCataloging :loc.iso639-2/eng,
+   :ri/recordChangeDate #inst "2022-12-22T17:05:50.000-00:00",
+   :ri/recordContentSource :loc.organizations/dlc,
+   :ri/recordStatus "revised"}],
+ :madsrdf/hasSource
+ [{:madsrdf/citationNote
+   "under Prank call (A prank call (also known as a crank call) is a telephone call intended by the caller as a practical joke played on the person answering. It is often a type of nuisance call. Recordings of prank phone calls became a staple of the obscure and amusing cassette tapes traded among musicians, sound engineers, and media traders in the United States from the late 1970s)@en",
+   :madsrdf/citationSource "Wikipedia, viewed Aug. 17, 2022",
+   :madsrdf/citationStatus "found",
+   :rdf/type :madsrdf/Source}
+  {:madsrdf/citationSource "Work cat: Phone jackin, 1997",
+   :madsrdf/citationStatus "found",
+   :rdf/type :madsrdf/Source}],
+ :madsrdf/authoritativeLabel "Prank telephone calls@en"}
+```
