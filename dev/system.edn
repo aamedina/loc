@@ -1,68 +1,71 @@
-{:vocab {:sc/create-fn net.wikipunk.rdf/map->UniversalTranslator
-         :sc/refs      [:loc]
-         :init-ns      net.wikipunk.mop.init}
- :loc   {:sc/create-fn net.wikipunk.loc/map->LOC
-         :boot         [#_net.wikipunk.loc.boot/actionsGranted
-                        #_net.wikipunk.loc.boot/agentType
-                        #_net.wikipunk.loc.boot/childrensSubjects
-                        #_net.wikipunk.loc.boot/classification
-                        #_net.wikipunk.loc.boot/classSchemes
-                        #_net.wikipunk.loc.boot/contentLocationType
-                        #_net.wikipunk.loc.boot/copyrightStatus
-                        #_net.wikipunk.loc.boot/countries
-                        #_net.wikipunk.loc.boot/cryptographicHashFunctions
-                        #_net.wikipunk.loc.boot/demographicTerms                        
-                        #_net.wikipunk.loc.boot/environmentCharacteristic
-                        #_net.wikipunk.loc.boot/environmentFunctionType
-                        #_net.wikipunk.loc.boot/environmentPurpose
-                        #_net.wikipunk.loc.boot/environmentRegistryRole
-                        #_net.wikipunk.loc.boot/ethnographicTerms
-                        #_net.wikipunk.loc.boot/eventOutcome
-                        #_net.wikipunk.loc.boot/eventRelatedAgentRole
-                        #_net.wikipunk.loc.boot/eventRelatedObjectRole
-                        #_net.wikipunk.loc.boot/eventType
-                        #_net.wikipunk.loc.boot/fingerprintschemes
-                        #_net.wikipunk.loc.boot/formatRegistryRole                        
-                        #_net.wikipunk.loc.boot/genreForms
-                        #_net.wikipunk.loc.boot/genreFormSchemes
-                        #_net.wikipunk.loc.boot/geographicAreas
-                        #_net.wikipunk.loc.boot/graphicMaterials
-                        #_net.wikipunk.loc.boot/hardwareType
-                        #_net.wikipunk.loc.boot/hubs
-                        #_net.wikipunk.loc.boot/identifiers
-                        #_net.wikipunk.loc.boot/inhibitorTarget
-                        #_net.wikipunk.loc.boot/inhibitorType
-                        #_net.wikipunk.loc.boot/instances
-                        #_net.wikipunk.loc.boot/iso639-1
-                        #_net.wikipunk.loc.boot/iso639-2
-                        #_net.wikipunk.loc.boot/iso639-5
-                        #_net.wikipunk.loc.boot/languages
-                        #_net.wikipunk.loc.boot/languageschemes
-                        #_net.wikipunk.loc.boot/lcc
-                        #_net.wikipunk.loc.boot/linkingAgentRoleEvent
-                        #_net.wikipunk.loc.boot/linkingEnvironmentRole
-                        #_net.wikipunk.loc.boot/marcgt
-                        #_net.wikipunk.loc.boot/mcfcsc
-                        #_net.wikipunk.loc.boot/musiccodeschemes
-                        #_net.wikipunk.loc.boot/names
-                        #_net.wikipunk.loc.boot/nationalbibschemes
-                        #_net.wikipunk.loc.boot/nameTitleSchemes
-                        #_net.wikipunk.loc.boot/objectCategory
-                        #_net.wikipunk.loc.boot/organizations
-                        #_net.wikipunk.loc.boot/performanceMediums
-                        #_net.wikipunk.loc.boot/preservation
-                        #_net.wikipunk.loc.boot/preservationLevelRole
-                        #_net.wikipunk.loc.boot/preservationLevelType
-                        #_net.wikipunk.loc.boot/record
-                        #_net.wikipunk.loc.boot/relationshipSubType
-                        #_net.wikipunk.loc.boot/relationshipType
-                        #_net.wikipunk.loc.boot/resourceTypes
-                        #_net.wikipunk.loc.boot/rightsBasis
-                        #_net.wikipunk.loc.boot/rightsRelatedAgentRole
-                        #_net.wikipunk.loc.boot/signatureEncoding
-                        #_net.wikipunk.loc.boot/signatureMethod
-                        #_net.wikipunk.loc.boot/softwareType
-                        #_net.wikipunk.loc.boot/storageMedium
-                        #_net.wikipunk.loc.boot/subjects
-                        #_net.wikipunk.loc.boot/subjectSchemes
-                        #_net.wikipunk.loc.boot/works]}}
+{:vocab  {:sc/create-fn net.wikipunk.rdf/map->UniversalTranslator
+          :sc/refs      [:loc]
+          :init-ns      net.wikipunk.mop.init}
+ :loc    {:sc/create-fn net.wikipunk.loc/map->LOC
+          :boot         [net.wikipunk.loc.boot/actionsGranted
+                         net.wikipunk.loc.boot/agentType
+                         net.wikipunk.loc.boot/childrensSubjects
+                         net.wikipunk.loc.boot/classification
+                         net.wikipunk.loc.boot/classSchemes
+                         net.wikipunk.loc.boot/contentLocationType
+                         net.wikipunk.loc.boot/copyrightStatus
+                         net.wikipunk.loc.boot/countries
+                         net.wikipunk.loc.boot/cryptographicHashFunctions
+                         net.wikipunk.loc.boot/demographicTerms                        
+                         net.wikipunk.loc.boot/environmentCharacteristic
+                         net.wikipunk.loc.boot/environmentFunctionType
+                         net.wikipunk.loc.boot/environmentPurpose
+                         net.wikipunk.loc.boot/environmentRegistryRole
+                         net.wikipunk.loc.boot/ethnographicTerms
+                         net.wikipunk.loc.boot/eventOutcome
+                         net.wikipunk.loc.boot/eventRelatedAgentRole
+                         net.wikipunk.loc.boot/eventRelatedObjectRole
+                         net.wikipunk.loc.boot/eventType
+                         net.wikipunk.loc.boot/fingerprintschemes
+                         net.wikipunk.loc.boot/formatRegistryRole                        
+                         net.wikipunk.loc.boot/genreForms
+                         net.wikipunk.loc.boot/genreFormSchemes
+                         net.wikipunk.loc.boot/geographicAreas
+                         net.wikipunk.loc.boot/graphicMaterials
+                         net.wikipunk.loc.boot/hardwareType
+                         net.wikipunk.loc.boot/hubs
+                         net.wikipunk.loc.boot/identifiers
+                         net.wikipunk.loc.boot/inhibitorTarget
+                         net.wikipunk.loc.boot/inhibitorType
+                         net.wikipunk.loc.boot/instances
+                         net.wikipunk.loc.boot/iso639-1
+                         net.wikipunk.loc.boot/iso639-2
+                         net.wikipunk.loc.boot/iso639-5
+                         net.wikipunk.loc.boot/languages
+                         net.wikipunk.loc.boot/languageschemes
+                         net.wikipunk.loc.boot/lcc
+                         net.wikipunk.loc.boot/linkingAgentRoleEvent
+                         net.wikipunk.loc.boot/linkingEnvironmentRole
+                         net.wikipunk.loc.boot/marcgt
+                         net.wikipunk.loc.boot/mcfcsc
+                         net.wikipunk.loc.boot/musiccodeschemes
+                         net.wikipunk.loc.boot/names
+                         net.wikipunk.loc.boot/nationalbibschemes
+                         net.wikipunk.loc.boot/nameTitleSchemes
+                         net.wikipunk.loc.boot/objectCategory
+                         net.wikipunk.loc.boot/organizations
+                         net.wikipunk.loc.boot/performanceMediums
+                         net.wikipunk.loc.boot/preservation
+                         net.wikipunk.loc.boot/preservationLevelRole
+                         net.wikipunk.loc.boot/preservationLevelType
+                         net.wikipunk.loc.boot/record
+                         net.wikipunk.loc.boot/relationshipSubType
+                         net.wikipunk.loc.boot/relationshipType
+                         net.wikipunk.loc.boot/resourceTypes
+                         net.wikipunk.loc.boot/rightsBasis
+                         net.wikipunk.loc.boot/rightsRelatedAgentRole
+                         net.wikipunk.loc.boot/signatureEncoding
+                         net.wikipunk.loc.boot/signatureMethod
+                         net.wikipunk.loc.boot/softwareType
+                         net.wikipunk.loc.boot/storageMedium
+                         net.wikipunk.loc.boot/subjects
+                         net.wikipunk.loc.boot/subjectSchemes
+                         net.wikipunk.loc.boot/works]}
+ :openai {:sc/create-fn net.wikipunk.openai/map->Client}
+ :search {:sc/create-fn net.wikipunk.loc.api/map->Client
+          :base-uri     "https://id.loc.gov"}}

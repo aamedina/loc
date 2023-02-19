@@ -2,6 +2,40 @@
   {:rdf/type :jsonld/Context}
   (:refer-clojure :exclude [frequencies]))
 
+(def madsrdf
+  {:dcat/downloadURL "resources/mads.rdf"
+   :rdf/type    :rdfa/PrefixMapping
+   :rdfa/uri    "http://www.loc.gov/mads/rdf/v1#"
+   :rdfa/prefix "madsrdf"})
+
+(def bibframe
+  {:dcat/downloadURL "https://id.loc.gov/ontologies/bibframe.rdf"
+   :rdf/type    :rdfa/PrefixMapping
+   :rdfa/uri    "http://id.loc.gov/ontologies/bibframe/"
+   :rdfa/prefix "bf"})
+
+(def premis
+  {:rdf/type    :rdfa/PrefixMapping
+   :rdfa/uri    "http://www.loc.gov/premis/rdf/v3/"
+   :rdfa/prefix "premis"})
+
+(def bflc
+  {:rdf/type    :rdfa/PrefixMapping
+   :rdfa/uri    "http://id.loc.gov/ontologies/bflc/"
+   :rdfa/prefix "bflc"
+   :rdf/ns-prefix-map {"bflc" "http://id.loc.gov/ontologies/bflc/"
+                       "bf"  "http://id.loc.gov/ontologies/bibframe/",
+                       "owl"      "http://www.w3.org/2002/07/owl#",
+                       "rdf"      "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+                       "rdfs"     "http://www.w3.org/2000/01/rdf-schema#"
+                       "skos"     "http://www.w3.org/2004/02/skos/core#"}})
+
+(def changeset
+  {:dcat/downloadURL "https://vocab.org/changeset/schema-20090518.rdf"
+   :rdf/type         :rdfa/PrefixMapping
+   :rdfa/uri         "http://purl.org/vocab/changeset/schema#"
+   :rdfa/prefix      "cs"})
+
 (def record
   {:rdf/type    :rdfa/PrefixMapping
    :rdfa/uri    "http://id.loc.gov/ontologies/RecordInfo#"
@@ -359,7 +393,7 @@
    :rdfa/uri         "http://id.loc.gov/vocabulary/genreFormSchemes/"})
 
 (def names
-  {:dcat/downloadURL "resources/names.skosrdf.ttl.gz",
+  {:dcat/downloadURL #_"resources/names.skosrdf.ttl.gz", "/home/adrian/Downloads/names.skosrdf.ttl"
    :rdf/type         :rdfa/PrefixMapping,
    :rdfa/prefix      "loc.names",
    :rdfa/uri         "http://id.loc.gov/authorities/names/"})

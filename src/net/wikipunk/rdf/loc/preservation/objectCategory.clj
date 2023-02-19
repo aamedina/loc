@@ -177,7 +177,6 @@
    :loc.preservation.objectCategory/collection_PREMIS,
    :madsrdf/isMemberOfMADSScheme [:loc.preservation/objectCategory
                                   :loc.vocabulary/preservation],
-   :owl/sameAs :premis/Representation,
    :rdf/type :madsrdf/Authority,
    :rdfs/subClassOf :premis/Object,
    :skos/changeNote [{:cs/changeReason    "new",

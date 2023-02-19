@@ -7,6 +7,7 @@
   See also https://github.com/stuartsierra/component.repl"
   (:require
    [arachne.aristotle.registry :as reg]
+   [clj-http.client :as http]
    [clojure.datafy :refer [datafy]]
    [clojure.edn :as edn]
    [clojure.java.io :as io]
@@ -26,6 +27,7 @@
    [net.wikipunk.mop :as mop :refer [isa? descendants ancestors parents]]   
    [net.wikipunk.loc :as loc]
    [net.wikipunk.loc.boot :as boot]
+   [net.wikipunk.openai :as openai]
    [zprint.core :as zprint])
   (:refer-clojure :exclude [isa? descendants ancestors parents]))
 
